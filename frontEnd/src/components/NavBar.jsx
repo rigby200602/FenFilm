@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <>
+    <div className="w-full h-[10%]">
       <div className="flex text-white mx-[5%] mt-4">
         <h1 className="text-4xl font-bold cursor-pointer">FenFilm</h1>
         <div className="ml-auto">
@@ -11,10 +11,8 @@ const NavBar = () => {
           </button>
         </div>
       </div>
-      <div className="bg-white h-[1px] mt-[1%] mx-[5%]">
-        <br />
-      </div>
-    </>
+      <div className="bg-white h-[1px] mt-[1%] mx-[5%]"></div>
+    </div>
   );
 };
 
