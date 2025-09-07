@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='absolute bottom-0 text-white h-[20%] mx-[5%]'>
+        Footer
+    </div>
   )
 }
 
