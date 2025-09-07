@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
   background-color: #17252A;
   font-family: "lexend", sans-serif;
 }
