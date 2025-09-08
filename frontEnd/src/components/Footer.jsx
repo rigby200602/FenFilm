@@ -4,7 +4,7 @@ import tiktok from "../assets/icons/tiktok.png";
 
 const Footer = () => {
   return (
-    <div className="absolute bottom-0 text-white h-[25%] w-full px-[5%]">
+    <div className="text-white h-[25%] w-full px-[5%]">
       <div className="bg-white h-[1px] my-4"></div>
       <div className="flex w-full h-[75%]">
         <div className="flex flex-col justify-center items-center w-[25%]"></div>
