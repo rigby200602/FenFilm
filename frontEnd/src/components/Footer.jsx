@@ -1,6 +1,8 @@
 import React from "react";
 import fb from "../assets/icons/fb.png";
 import tiktok from "../assets/icons/tiktok.png";
+import { RiFacebookBoxFill } from "react-icons/ri";
+import { AiFillTikTok } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -13,20 +15,8 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center w-[25%]">
           <h1 className="text-4xl font-bold cursor-pointer">FenFilm</h1>
           <div className="flex mt-4">
-            <img
-              src={fb}
-              alt="Facebook"
-              width="40px"
-              height="40px"
-              className="mx-4 cursor-pointer"
-            />
-            <img
-              src={tiktok}
-              alt="Tik Tok"
-              width="40px"
-              height="40px"
-              className="mx-4 cursor-pointer"
-            />
+            <RiFacebookBoxFill className="mx-4 cursor-pointer" size={50}/>
+            <AiFillTikTok  className="mx-4 cursor-pointer" size={50}/>
           </div>
         </div>
       </div>
