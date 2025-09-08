@@ -1,6 +1,6 @@
 import React from "react";
-import fb from "../assets/fb.png";
-import tiktok from "../assets/tiktok.png";
+import fb from "../assets/icons/fb.png";
+import tiktok from "../assets/icons/tiktok.png";
 
 const Footer = () => {
   return (
