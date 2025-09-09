@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center w-[25%]"></div>
         <div className="flex flex-col justify-center items-center w-[25%]">
           <h1 className="text-4xl font-bold cursor-pointer">FenFilm</h1>
-          <div className="flex mt-4">
+          <div className="flex my-4">
             <FaFacebookSquare className="mx-4 cursor-pointer mt-[2px]" size={50}/>
             <AiFillTikTok  className="mx-4 cursor-pointer" size={55}/>
           </div>
