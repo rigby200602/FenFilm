@@ -13,7 +13,7 @@ const Carousel = () => {
   }
 
   return (
-    <div className='w-full px-[5%] my-[2%]'>
+    <div className='flex justify-center items-center w-full px-[5%] my-[2%]'>
       <BsArrowLeftCircleFill size={50} onClick={prevSlide}/>
         <img src={DP} alt='Danny Phantom' className='w-full max-h-100'/>
       <BsArrowRightCircleFill size={50} onClick={nextSlide}/>
