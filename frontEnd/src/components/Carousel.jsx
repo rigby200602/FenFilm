@@ -4,10 +4,10 @@ import DP from '../assets/DP.jpg'
 const Carousel = () => {
   const [slide, setSlide] = useState(0)
   const nextSlide = () => {
-
+    setSlide()
   }
   const prevSlide = () => {
-
+    setSlide()
   }
 
   return (
