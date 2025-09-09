@@ -3,6 +3,13 @@ import DP from '../assets/DP.jpg'
 
 const Carousel = () => {
   const [slide, setSlide] = useState(0)
+  const nextSlide = () => {
+
+  }
+  const prevSlide = () => {
+
+  }
+
   return (
     <div className='w-full px-[5%] my-[2%]'>
         <img src={DP} alt='Danny Phantom' className='w-full max-h-100'/>
