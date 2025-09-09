@@ -14,9 +14,9 @@ const Carousel = () => {
 
   return (
     <div className='w-full px-[5%] my-[2%]'>
-      <BsArrowLeftCircleFill/>
+      <BsArrowLeftCircleFill size={50}/>
         <img src={DP} alt='Danny Phantom' className='w-full max-h-100'/>
-      <BsArrowRightCircleFill/>
+      <BsArrowRightCircleFill size={50}/>
     </div>
   )
 }
