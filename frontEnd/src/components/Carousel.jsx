@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import DP from '../assets/DP.jpg'
+import slides from '../data/slides.json'
 
 const Carousel = () => {
   const [slide, setSlide] = useState(0)
   const nextSlide = () => {
-    setSlide()
+    setSlide(slide === slides.length - 1 ? 0 : slide + 1)
   }
   const prevSlide = () => {
-    setSlide()
+    setSlide(slide === slides.length - 1 ? 0 : slide + 1)
   }
 
   return (
