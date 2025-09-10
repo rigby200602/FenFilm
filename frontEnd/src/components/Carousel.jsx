@@ -3,10 +3,13 @@ import DP from "../assets/DP.jpg";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const Carousel = ({ data }) => {
+  // State to keep track of the current slide
   const [slide, setSlide] = useState(0);
+  // Function to go to the next slide
   const nextSlide = () => {
     setSlide(slide === data.length - 1 ? 0 : slide + 1);
   };
+  // Function to go to the previous slide
   const prevSlide = () => {
     setSlide(slide === data.length - 1 ? 0 : slide - 1);
   };
