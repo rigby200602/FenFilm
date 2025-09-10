@@ -9,7 +9,7 @@ const Carousel = () => {
     setSlide(slide === slides.length - 1 ? 0 : slide + 1)
   }
   const prevSlide = () => {
-    setSlide(slide === slides.length - 1 ? 0 : slide + 1)
+    setSlide(slide === slides.length - 1 ? 0 : slide - 1)
   }
 
   return (
