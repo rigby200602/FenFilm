@@ -12,10 +12,12 @@ const Carousel = ({data}) => {
   }
 
   return (
-    <div className='flex justify-center items-center w-full px-[5%] my-[2%]'>
-      <BsArrowLeftCircleFill size={50} onClick={prevSlide} className='cursor-pointer'/>
+    <div className='flex relative justify-center items-center w-full px-[5%] my-[2%]'>
+      <BsArrowLeftCircleFill size={50} onClick={prevSlide} color='white'
+      className='absolute cursor-pointer left-0 ml-[5%]'/>
         <img src={DP} alt='Danny Phantom' className='w-full max-h-120'/>
-      <BsArrowRightCircleFill size={50} onClick={nextSlide} className='cursor-pointer'/>
+      <BsArrowRightCircleFill size={50} onClick={nextSlide} color='white'
+      className='absolute cursor-pointer right-0 mr-[5%]'/>
     </div>
   )
 }
