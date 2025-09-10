@@ -2,11 +2,11 @@
     "slides" : [
     {
         "title": "Danny Phantom",
-        "url": "DP.jpg"
+        "url": "./assets/DP.jpg"
     },
     {
         "title": "Digata Defenders",
-        "url": "DD.jpg"
+        "url": "../assets/DD.jpg"
     }
     ]
 }
