@@ -1,6 +1,4 @@
 import React from "react";
-import fb from "../assets/icons/fb.png";
-import tiktok from "../assets/icons/tiktok.png";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 
