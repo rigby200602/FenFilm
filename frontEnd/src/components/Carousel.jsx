@@ -3,13 +3,13 @@ import DP from '../assets/DP.jpg'
 import slides from '../data/slides.json'
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-const Carousel = () => {
+const Carousel = ({data}) => {
   const [slide, setSlide] = useState(0)
   const nextSlide = () => {
-    setSlide(slide === slides.length - 1 ? 0 : slide + 1)
+    setSlide(slide === data.length - 1 ? 0 : slide + 1)
   }
   const prevSlide = () => {
-    setSlide(slide === slides.length - 1 ? 0 : slide - 1)
+    setSlide(slide === data.length - 1 ? 0 : slide - 1)
   }
 
   return (
