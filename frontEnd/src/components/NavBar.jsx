@@ -11,6 +11,7 @@ const NavBar = () => {
           </button>
         </div>
       </div>
+      {/* White line */}
       <div className="bg-white h-[1px] mt-[1%] mx-[5%]"></div>
     </div>
   );
