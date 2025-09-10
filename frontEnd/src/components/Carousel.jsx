@@ -14,9 +14,9 @@ const Carousel = () => {
 
   return (
     <div className='flex justify-center items-center w-full px-[5%] my-[2%]'>
-      <BsArrowLeftCircleFill size={50} onClick={prevSlide}/>
-        <img src={DP} alt='Danny Phantom' className='w-full max-h-100'/>
-      <BsArrowRightCircleFill size={50} onClick={nextSlide}/>
+      <BsArrowLeftCircleFill size={50} onClick={prevSlide} className='cursor-pointer'/>
+        <img src={DP} alt='Danny Phantom' className='w-full max-h-120'/>
+      <BsArrowRightCircleFill size={50} onClick={nextSlide} className='cursor-pointer'/>
     </div>
   )
 }
