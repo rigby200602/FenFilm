@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import DP from '../assets/DP.jpg'
-import slides from '../data/slides.json'
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const Carousel = ({data}) => {
