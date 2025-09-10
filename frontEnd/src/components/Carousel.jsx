@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import DP from "../assets/DP.jpg";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const Carousel = ({ data }) => {
@@ -24,8 +23,15 @@ const Carousel = ({ data }) => {
           className="absolute cursor-pointer left-0 ml-[5%]"
         />
       </span>
-
-      <img src={DP} alt="Danny Phantom" className="w-full max-h-120" />
+      {/* Render slides */}
+      {data.slides.map((slide, i) => {
+        <img
+          key={i}
+          src={`../assets/${slide.url}`}
+          alt={slide.title}
+          className={slide === i ? "w-full max-h-120": "hidden" }
+        />;
+      })}
       <span className="hover:opacity-50">
         <BsArrowRightCircleFill
           size={50}
