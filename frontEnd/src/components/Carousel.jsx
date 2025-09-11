@@ -25,12 +25,14 @@ const Carousel = ({ data }) => {
       </span>
       {/* Render slides */}
       {data.map((item, i) => {
-        <img
+        return (
+          <img
           key={i}
           src={item.url}
           alt={item.title}
           className={slide === i ? "w-full max-h-120": "hidden" }
-        />;
+        />
+        )
       })}
       <span className="hover:opacity-50">
         <BsArrowRightCircleFill
