@@ -27,12 +27,12 @@ const Carousel = ({ data }) => {
       {data.map((item, i) => {
         return (
           <img
-          key={i}
-          src={item.url}
-          alt={item.title}
-          className={slide === i ? "w-full max-h-120": "hidden" }
-        />
-        )
+            key={i}
+            src={item.url}
+            alt={item.title}
+            className={slide === i ? "w-full max-h-120" : "hidden"}
+          />
+        );
       })}
       <span className="hover:opacity-50">
         <BsArrowRightCircleFill
