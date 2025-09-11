@@ -4,7 +4,7 @@ import { AiFillTikTok } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="text-white h-[25%] w-full px-[5%]">
+    <div className="text-white h-[25%] w-full px-[5%] mt-[2%]">
       {/* White line */}
       <div className="bg-white h-[1px] my-4"></div>
       <div className="flex w-full h-[75%]">
