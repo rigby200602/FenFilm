@@ -24,11 +24,11 @@ const Carousel = ({ data }) => {
         />
       </span>
       {/* Render slides */}
-      {data.slides.map((slide, i) => {
+      {data.map((item, i) => {
         <img
           key={i}
-          src={`../assets/${slide.url}`}
-          alt={slide.title}
+          src={item.url}
+          alt={item.title}
           className={slide === i ? "w-full max-h-120": "hidden" }
         />;
       })}
