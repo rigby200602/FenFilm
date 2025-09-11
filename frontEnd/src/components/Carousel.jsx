@@ -15,7 +15,7 @@ const Carousel = ({ data }) => {
 
   return (
     <div className="flex relative justify-center items-center w-full px-[5%]">
-      <span className="hover:opacity-50 mb-[4%]">
+      <span className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
         <BsArrowLeftCircleFill
           size={50}
           onClick={prevSlide}
@@ -34,7 +34,7 @@ const Carousel = ({ data }) => {
           />
         );
       })}
-      <span className="hover:opacity-50 mb-[4%]">
+      <span className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
         <BsArrowRightCircleFill
           size={50}
           onClick={nextSlide}
