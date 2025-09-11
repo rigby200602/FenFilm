@@ -14,13 +14,13 @@ const Carousel = ({ data }) => {
   };
 
   return (
-    <div className="flex relative justify-center items-center w-full px-[5%] my-[2%]">
-      <span className="hover:opacity-50">
+    <div className="flex relative justify-center items-center w-full px-[5%]">
+      <span className="hover:opacity-50 mb-[4%]">
         <BsArrowLeftCircleFill
           size={50}
           onClick={prevSlide}
           color="white"
-          className="absolute cursor-pointer left-0 ml-[5%]"
+          className="absolute cursor-pointer"
         />
       </span>
       {/* Render slides */}
@@ -30,11 +30,11 @@ const Carousel = ({ data }) => {
             key={i}
             src={item.url}
             alt={item.title}
-            className={slide === i ? "w-full max-h-120" : "hidden"}
+            className={slide === i ? "w-full max-h-135" : "hidden"}
           />
         );
       })}
-      <span className="hover:opacity-50">
+      <span className="hover:opacity-50 mb-[4%]">
         <BsArrowRightCircleFill
           size={50}
           onClick={nextSlide}
