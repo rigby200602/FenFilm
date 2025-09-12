@@ -43,7 +43,7 @@ const Carousel = ({ data }) => {
         />
       </span>
       <span className="flex absolute bottom-4 space-x-2">
-        {data.map((i) => {
+        {data.map((item, i) => {
           return (
             <button
               key={i}
