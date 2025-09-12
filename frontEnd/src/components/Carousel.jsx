@@ -43,7 +43,15 @@ const Carousel = ({ data }) => {
         />
       </span>
       <span className="flex absolute bottom-4">
-        
+        {data.map((item, i) => {
+          return (
+            <button
+              key={i}
+              onClick={() => setSlide(i)}
+              >
+            </button>
+          )
+        })}
       </span>
     </div>
   );
