@@ -48,7 +48,7 @@ const Carousel = ({ data }) => {
             <button
               key={i}
               onClick={() => setSlide(i)}
-              className={slide === i ? "text-white text-5xl" : "text-gray-400 text-5xl"}>
+              className={slide === i ? "text-white text-5xl cursor-pointer" : "text-gray-400 text-5xl cursor-pointer"}>
               •
             </button>
           )
