@@ -42,6 +42,9 @@ const Carousel = ({ data }) => {
           className="absolute cursor-pointer right-0 mr-[5%]"
         />
       </span>
+      <span className="flex absolute bottom-4">
+        
+      </span>
     </div>
   );
 };
