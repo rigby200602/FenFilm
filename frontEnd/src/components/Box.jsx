@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Box = () => {
+const Box = (props) => {
   return (
-    <div>Box</div>
+    <div>
+
+    </div>
   )
 }
 
