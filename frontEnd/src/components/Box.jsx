@@ -2,8 +2,8 @@ import React from 'react'
 
 const Box = (props) => {
   return (
-    <div>
-
+    <div className='max-h-[150px]'>
+        box
     </div>
   )
 }
