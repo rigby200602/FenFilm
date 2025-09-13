@@ -1,4 +1,3 @@
-import Box from "./components/Box"
 import Carousel from "./components/Carousel"
 import Footer from "./components/Footer"
 import ListCartoon from "./components/ListCartoon"
@@ -12,7 +11,6 @@ function App() {
       <NavBar />
       <Carousel data={slides}/>
       <ListCartoon title={"Phim mới cập nhật"}/>
-      <Box/>
       <Footer />
     </div>
   )
