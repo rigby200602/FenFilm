@@ -1,5 +1,7 @@
 {
-    "Danny Phantom" : {
-        "thumnail": "s1e1.webp"
-    }
+    "DannyPhantom" : [
+       {
+         "thumnail": "s1ep1.webp"
+       }
+    ]
 }
