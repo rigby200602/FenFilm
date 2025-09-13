@@ -6,7 +6,7 @@ const ListCartoon = (props) => {
     <div className='h-[15%] mx-[5%] my-8'>
         <h1 className='text-3xl text-white'>{props.title}</h1>
         {/* Show box */}
-        <div>
+        <div className='grid grid-cols-6 gap-4'>
             <Box/>
         </div>
     </div>
