@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from './Box'
-import {DannyPhantom} from '../data/data.json'
+import { dannyPhantom } from '../data/list.json'
 
 const ListCartoon = (props) => {
   return (
@@ -8,7 +8,7 @@ const ListCartoon = (props) => {
         <h1 className='text-3xl text-white'>{props.title}</h1>
         {/* Show box */}
         <div className='grid grid-cols-6 gap-4'>
-            <Box data={DannyPhantom}/>
+            <Box data={dannyPhantom}/>
         </div>
     </div>
   )
