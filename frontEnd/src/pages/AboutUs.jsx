@@ -10,7 +10,8 @@ const AboutUs = () => {
             <h1 className='text-4xl text-center'>Chúng tôi là ai?</h1>
             <p>Xin chào các bạn!</p>
             <p>Mình là Fensub, người đang thực hiện các dự ác dịch thuật các phim hoạt hình cũ trên các kênh TV ngày ấy.</p>
-            <p>Và đây hiện tại là dự án tiếp theo ccuar mình muốn thực hiện, nhằm tạo ra một trang web nhầm tổng hợp những tập phim mình đã làm,
+            <p>Với mong muốn đem lại những trải nghiệm tốt hơn và mang lại cảm giác hoài niệm cho mọi người. Nên mình đã lập trang này nhầm mục đích đó.</p>
+            <p>Và đây hiện tại là dự án tiếp theo của mình muốn thực hiện, nhằm tạo ra một trang web nhầm tổng hợp những tập phim mình đã làm,
                 để mọi người có thể dễ dàng theo dõi và có nền tảng tiện để xem phim hơn.
             </p>
             <p>Một lần nữa, mình muốn gửi lời cảm ơn đến tất cả các bạn đã luôn ủng hộ mình và sẽ tiếp tục đồng hành cùng mình trong những dự án sắp tới.</p>
