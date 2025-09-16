@@ -8,9 +8,9 @@ const Footer = () => {
       {/* White line */}
       <div className="bg-white h-[1px] my-4"></div>
       <div className="flex w-full h-[75%]">
-        <div className="flex flex-col justify-center items-center w-[25%]"></div>
-        <div className="flex flex-col justify-center items-center w-[25%]"></div>
-        <div className="flex flex-col justify-center items-center w-[25%]"></div>
+        <div className="hidden md:block flex-col justify-center items-center w-[25%]"></div>
+        <div className="hidden md:block flex-col justify-center items-center w-[25%]"></div>
+        <div className="hidden md:block flex-col justify-center items-center w-[25%]"></div>
         <div className="flex flex-col justify-center items-center w-[25%]">
           <h1 className="text-4xl font-bold cursor-pointer">FenFilm</h1>
           <div className="flex my-4">
