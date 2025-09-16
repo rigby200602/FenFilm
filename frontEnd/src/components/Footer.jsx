@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="text-white h-[25%] w-full px-[5%] mt-[2%]">
       {/* White line */}
       <div className="bg-white h-[1px] my-4"></div>
-      <div className="flex w-full h-[75%]">
+      <div className="flex w-full h-[75%] justify-center items-center">
         <div className="hidden md:block flex-col  w-[25%]"></div>
         <div className="hidden md:block flex-col  w-[25%]"></div>
         <div className="hidden md:block flex-col  w-[25%]"></div>
