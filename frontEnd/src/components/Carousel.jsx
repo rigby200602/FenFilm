@@ -20,7 +20,7 @@ const Carousel = ({ data }) => {
           size={50}
           onClick={prevSlide}
           color="white"
-          className="absolute cursor-pointer"
+          className="hidden md:block absolute cursor-pointer"
         />
       </span>
       {/* Render slides */}
