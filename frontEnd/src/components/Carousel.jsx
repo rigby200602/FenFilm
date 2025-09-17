@@ -14,7 +14,7 @@ const Carousel = ({ data }) => {
   };
 
   return (
-    <div className="flex relative justify-center items-center w-full px-[5%]">
+    <div className="flex justify-center items-center px-[5%]">
       <span className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
         <BsArrowLeftCircleFill
           size={50}
@@ -34,12 +34,12 @@ const Carousel = ({ data }) => {
           />
         );
       })}
-      <span className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
+      <span className="absolute hover:opacity-50 transition hover:-translate-y-1 right-[5.5%]">
         <BsArrowRightCircleFill
           size={50}
           onClick={nextSlide}
           color="white"
-          className="hidden md:block absolute cursor-pointer right-0  mr-[5.5%]"
+          className="hidden md:block cursor-pointer"
         />
       </span>
       <span className="flex absolute bottom-4 space-x-2">
