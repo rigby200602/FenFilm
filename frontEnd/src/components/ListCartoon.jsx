@@ -4,7 +4,7 @@ import Box from "./Box";
 const ListCartoon = (props) => {
   return (
     <div className="h-[15%] min-h- mx-[5%] my-8">
-      <h1 className="text-3xl text-white">{props.title}</h1>
+      <h1 className="text-3xl text-white text-center md:text-start">{props.title}</h1>
       {/* Show box */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {props.data.map((item,i) => {
