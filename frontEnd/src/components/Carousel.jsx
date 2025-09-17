@@ -39,7 +39,7 @@ const Carousel = ({ data }) => {
           size={50}
           onClick={nextSlide}
           color="white"
-          className="absolute cursor-pointer right-0 mr-[5%]"
+          className="hidden md:block absolute cursor-pointer right-0 mr-[5%]"
         />
       </span>
       <span className="flex absolute bottom-4 space-x-2">
