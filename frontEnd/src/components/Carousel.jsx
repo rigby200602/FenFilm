@@ -34,7 +34,7 @@ const Carousel = ({ data }) => {
           />
         );
       })}
-      <span className="absolute hover:opacity-50 transition hover:-translate-y-1 right-[5.5%]">
+      <span className="hover:opacity-50 transition hover:-translate-y-1 absolute right-[5.5%]">
         <BsArrowRightCircleFill
           size={50}
           onClick={nextSlide}
@@ -42,13 +42,13 @@ const Carousel = ({ data }) => {
           className="hidden md:block cursor-pointer"
         />
       </span>
-      <span className="flex absolute bottom-4 space-x-2">
+      <span className="flex absolute mt-[30%] space-x-2">
         {data.map((item, i) => {
           return (
             <button
               key={i}
               onClick={() => setSlide(i)}
-              className={slide === i ? "text-white text-5xl cursor-pointer" : "text-gray-400 text-5xl cursor-pointer"}>
+              className={slide === i ? "text-white text-3xl md:text-4xl lg:text-5xl cursor-pointer" : "text-gray-400 text-3xl md:text-4xl lg:text-5xl cursor-pointer"}>
               •
             </button>
           )
