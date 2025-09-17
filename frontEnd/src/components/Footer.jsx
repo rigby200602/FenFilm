@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center w-[25%]">
           <h1 className="text-4xl font-bold cursor-pointer">FenFilm</h1>
           <div className="flex my-4">
-            <FaFacebookSquare className="mx-4 cursor-pointer mt-[2px]" size={50}/>
+            <Link to={'https://www.facebook.com/fensub20'}><FaFacebookSquare className="mx-4 cursor-pointer mt-[2px]" size={50}/></Link>
             <AiFillTikTok  className="mx-4 cursor-pointer" size={55}/>
           </div>
         </div>
