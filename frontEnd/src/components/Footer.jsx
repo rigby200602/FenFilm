@@ -16,7 +16,7 @@ const Footer = () => {
           <h1 className="text-4xl font-bold cursor-pointer">FenFilm</h1>
           <div className="flex my-4">
             <Link to={'https://www.facebook.com/fensub20'}><FaFacebookSquare className="mx-4 cursor-pointer mt-[2px]" size={50}/></Link>
-            <AiFillTikTok  className="mx-4 cursor-pointer" size={55}/>
+            <Link to={'https://www.tiktok.com/@fensub02'}><AiFillTikTok  className="mx-4 cursor-pointer" size={55}/></Link>
           </div>
         </div>
       </div>
