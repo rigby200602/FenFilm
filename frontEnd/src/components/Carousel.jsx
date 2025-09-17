@@ -20,7 +20,7 @@ const Carousel = ({ data }) => {
           size={50}
           onClick={prevSlide}
           color="white"
-          className="hidden md:block absolute cursor-pointer"
+          className="hidden md:block absolute cursor-pointer ml-1"
         />
       </span>
       {/* Render slides */}
@@ -39,7 +39,7 @@ const Carousel = ({ data }) => {
           size={50}
           onClick={nextSlide}
           color="white"
-          className="hidden md:block absolute cursor-pointer right-0 mr-[5%]"
+          className="hidden md:block absolute cursor-pointer right-0 mr-[5.2%]"
         />
       </span>
       <span className="flex absolute bottom-4 space-x-2">
