@@ -1,16 +1,16 @@
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './index.css'
-import App from './App.jsx'
-import AboutUs from './pages/AboutUs.jsx'
-import Collections from './pages/Collections.jsx'
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
+import App from "./App.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import Collections from "./pages/Collections.jsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path='/about-us' element={<AboutUs/>} />
-      <Route paht='/collections/:collection' element={<Collections/>}/>
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/collections" element={<Collections />} />
     </Routes>
-  </BrowserRouter>,
-)
+  </BrowserRouter>
+);
