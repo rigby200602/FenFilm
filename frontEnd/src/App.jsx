@@ -11,7 +11,7 @@ function App() {
     <div>
       <NavBar />
       <Carousel data={slides}/>
-      <ListCartoon title={"Phim mới cập nhật"} data={dannyPhantom}/>
+      <ListCartoon title={"Danny Phantom"} data={dannyPhantom}/>
       <Footer />
     </div>
   )
