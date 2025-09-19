@@ -3,14 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import AboutUs from './pages/AboutUs.jsx'
-import Collection from './components/Collection.jsx'
+import Collections from './pages/Collections.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path='/about-us' element={<AboutUs/>} />
-      <Route paht='/collections/:collection' element={<Collection/>}/>
+      <Route paht='/collections/:collection' element={<Collections/>}/>
     </Routes>
   </BrowserRouter>,
 )
