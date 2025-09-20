@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ListCartoon = (props) => {
   return (
     <div className="h-[15%] min-h- mx-[5%] my-8">
-      <Link to={`/collections/${props.data.collection}`}>
+      <Link to={`/collections/${props.data[0].collection}`}>
         <h1 className="text-3xl text-white text-center md:text-start">{props.title}</h1>
       </Link>  
       {/* Show box */}
