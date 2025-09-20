@@ -4,12 +4,13 @@ import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 
 const Collections = () => {
-  const collectionId = useParams();
+  // get collection thorough id
+  const {id} = useParams();
   return (
     <div className="mx-[5%] text-white">
       <NavBar />
       <div className="flex">
-        
+
       </div>
       <Footer />
     </div>
