@@ -8,6 +8,9 @@ const Collections = () => {
   return (
     <div>
       <NavBar />
+      <div className="flex">
+        
+      </div>
       <Footer />
     </div>
   );
