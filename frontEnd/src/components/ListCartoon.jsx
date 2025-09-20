@@ -1,5 +1,6 @@
 import React from "react";
 import Box from "./Box";
+import { Link } from "react-router-dom";
 
 const ListCartoon = (props) => {
   return (
@@ -9,7 +10,9 @@ const ListCartoon = (props) => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {props.data.map((item,i) => {
           return (
-              <Box key={i} data={item} />
+              <Link to={`/collections/${item.collection}`}>
+                <Box key={i} data={item} />
+              </Link> 
           );
         })}
       </div>
