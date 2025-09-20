@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 const Collections = () => {
   const collectionId = useParams();
   return (
-    <div>
+    <div className="mx-[5%] text-white">
       <NavBar />
       <div className="flex">
         
