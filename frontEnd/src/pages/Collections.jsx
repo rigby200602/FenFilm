@@ -15,10 +15,10 @@ const Collections = ({data}) => {
   // check if collection valid or not?
   if (!collection) return <div>Collection not found</div>;
   return (
-    <div className="mx-[5%] text-white">
+    <div className="text-white">
       <NavBar />
-      <div className="flex">
-        <h2>{collection.name}</h2>
+      <div className="mx-[5%]">
+        <h2 className="text-4xl">{collection.name}</h2>
         <p>{collection.description}</p>
       </div>
       <Footer />
