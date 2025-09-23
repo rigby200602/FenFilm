@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import collections from '../data/collection.json'
+import list from '../data/list.json'
 
 const Collections = ({data}) => {
   // get collection thorough id
@@ -10,15 +11,15 @@ const Collections = ({data}) => {
   // create collection that have all film with same id
   const collection = collections.find(c => c.id === Number(id))
   // find film with same collection
-  const filmsInCollection = films.filter(f => f.collection === Number(id));
+  const filmsInCollection = list.filter(f => f.collection === Number(id));
   // check if collection valid or not?
   if (!collection) return <div>Collection not found</div>;
   return (
     <div className="mx-[5%] text-white">
       <NavBar />
       <div className="flex">
-        <h2>{data.name}</h2>
-        <p>{data.description}</p>
+        <h2>{collection.name}</h2>
+        <p>{collection.description}</p>
       </div>
       <Footer />
     </div>
