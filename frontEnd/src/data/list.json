@@ -1,24 +1,28 @@
 {
     "dannyPhantom" : [
         {
+            "id": 1,
             "title": "Tập 1 - Mystery Meat",
             "thumnail": "/s1e1.webp",
-            "collection": "Danny Phantom"
+            "collection": 101
         },
         {
+            "id": 2,
             "title": "Tập 2 - Parental Bonding",
             "thumnail": "/s1e2.webp",
-            "collection": "Danny Phantom"
+            "collection": 101
         }, 
         {
+            "id": 3,
             "title": "Tập 2 - Parental Bonding",
             "thumnail": "/s1e2.webp",
-            "collection": "Danny Phantom"
+            "collection": 101
         },
         {
+            "id": 4,
             "title": "Tập 2 - Parental Bonding",
             "thumnail": "/s1e2.webp",
-            "collection": "Danny Phantom"
+            "collection": 101
         }
     ]
 }
