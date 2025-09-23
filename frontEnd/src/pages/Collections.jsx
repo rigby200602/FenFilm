@@ -7,7 +7,9 @@ import collections from '../data/collection.json'
 const Collections = ({data}) => {
   // get collection thorough id
   const {id} = useParams();
+  // create collection that have all film with same id
   const collection = collections.find(c => c.id === Number(id))
+  // find film with same collection
   return (
     <div className="mx-[5%] text-white">
       <NavBar />
