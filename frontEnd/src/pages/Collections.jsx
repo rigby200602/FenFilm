@@ -10,6 +10,8 @@ const Collections = ({data}) => {
   // create collection that have all film with same id
   const collection = collections.find(c => c.id === Number(id))
   // find film with same collection
+  const filmsInCollection = films.filter(f => f.collection === Number(id));
+
   return (
     <div className="mx-[5%] text-white">
       <NavBar />
