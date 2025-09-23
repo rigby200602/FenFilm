@@ -1,5 +1,4 @@
-{
-    "dannyPhantom" : [
+[
         {
             "id": 1,
             "title": "Tập 1 - Mystery Meat",
@@ -24,5 +23,4 @@
             "thumnail": "/s1e2.webp",
             "collection": 101
         }
-    ]
-}
+]
