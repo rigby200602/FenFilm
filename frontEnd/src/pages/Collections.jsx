@@ -19,7 +19,9 @@ const Collections = ({data}) => {
       <NavBar />
       <div className="mx-[5%]">
         <h2 className="text-4xl">{collection.name}</h2>
-        <p>{collection.description}</p>
+        <div className="my-[2%]">
+          <p>{collection.description}</p>
+        </div>
       </div>
       <Footer />
     </div>
