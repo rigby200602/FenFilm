@@ -4,7 +4,7 @@ import ListCartoon from "./components/ListCartoon"
 import NavBar from "./components/NavBar"
 import {slides} from "./data/slides.json"
 import list from './data/list.json'
-import collections from './data/collection.json'
+import collections from './data/collections.json'
 
 function App() {
 
