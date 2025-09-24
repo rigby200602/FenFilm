@@ -4,6 +4,7 @@ import ListCartoon from "./components/ListCartoon"
 import NavBar from "./components/NavBar"
 import {slides} from "./data/slides.json"
 import list from './data/list.json'
+import collection from './data/collection.json'
 
 function App() {
 
@@ -11,7 +12,12 @@ function App() {
     <div>
       <NavBar />
       <Carousel data={slides}/>
-      <ListCartoon title={"Danny Phantom"} data={list}/>
+      {collection.map((item, i) => {
+        return (
+          <ListCartoon key={i} title={item.name} data={list}/>
+        )
+      })
+      }
       <Footer />
     </div>
   )
