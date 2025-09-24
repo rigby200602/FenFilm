@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import collections from '../data/collections.json'
 import lists from '../data/lists.json'
 
-const Collections = ({data}) => {
+const Collections = () => {
   // get collection thorough id
   const {id} = useParams();
   // create collection that have all film with same id
