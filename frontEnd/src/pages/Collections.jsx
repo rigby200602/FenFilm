@@ -19,7 +19,8 @@ const Collections = ({data}) => {
       <NavBar />
       <div className="mx-[5%]">
         <h2 className="text-4xl">{collection.name}</h2>
-        <div className="my-[2%]">
+        <div className="my-[2%] flex">
+          <img src={collection.src} className="w-80 h-100"/>
           <p>{collection.description}</p>
         </div>
       </div>
