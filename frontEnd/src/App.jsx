@@ -3,7 +3,7 @@ import Footer from "./components/Footer"
 import ListCartoon from "./components/ListCartoon"
 import NavBar from "./components/NavBar"
 import {slides} from "./data/slides.json"
-import list from './data/list.json'
+import lists from './data/lists.json'
 import collections from './data/collections.json'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Carousel data={slides}/>
       {collections.map((item, i) => {
         return (
-          <ListCartoon key={i} title={item.name} data={list}/>
+          <ListCartoon key={i} title={item.name} data={lists}/>
         )
       })
       }
