@@ -26,6 +26,7 @@ const Collections = () => {
         </div>
         <p className="ml-4 text-lg block md:hidden">{collection.description}</p>
       </div>
+      {/* check if film has any value */}
       { filmsInCollection.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[5%] my-8">
           {filmsInCollection.map((film,id) => (
