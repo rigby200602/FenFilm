@@ -29,6 +29,7 @@ const Collections = () => {
       {/* check if film has any value */}
       { filmsInCollection.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[5%] my-8">
+          {/* render box for each episode */}
           {filmsInCollection.map((film,id) => (
             <Box key={id} data={film} />
           ))}
