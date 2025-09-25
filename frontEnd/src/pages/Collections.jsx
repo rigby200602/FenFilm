@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import collections from '../data/collections.json'
 import lists from '../data/lists.json'
-import ListCartoon from "../components/ListCartoon";
+import Box from "../components/Box";
 
 const Collections = () => {
   // get collection thorough id
@@ -29,7 +29,7 @@ const Collections = () => {
       { filmsInCollection.length > 0 ? (
         <div>
           {filmsInCollection.map((film,id) => (
-            <ListCartoon key={id} />
+            <Box key={id} data={film} />
           ))}
         </div>
       ) : (
