@@ -27,7 +27,7 @@ const Collections = () => {
         <p className="ml-4 text-lg block md:hidden">{collection.description}</p>
       </div>
       { filmsInCollection.length > 0 ? (
-        <div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[5%] my-8">
           {filmsInCollection.map((film,id) => (
             <Box key={id} data={film} />
           ))}
