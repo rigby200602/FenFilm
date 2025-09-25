@@ -35,6 +35,7 @@ const Collections = () => {
           ))}
         </div>
       ) : (
+        // if no film in collection
         <div>
           <h2 className="text-2xl text-center my-8">No films found in this collection.</h2>
         </div>
