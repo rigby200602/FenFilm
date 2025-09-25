@@ -12,8 +12,7 @@ const Collections = () => {
   // create collection that have all film with same id
   const collection = collections.find(c => c.id === Number(id))
   // find film with same collection
-  // 
-  const filmsInCollection = 0
+  const filmsInCollection = lists.filter(film => film.collection === collection?.id);
   // check if collection valid or not?
   if (!collection) return <div className="flex justify-center items-center text-5xl text-white min-h-screen">Collection not found</div>;
   return (
