@@ -21,7 +21,7 @@ const Collections = () => {
         <h2 className="text-4xl text-center md:text-start">{collection.name}</h2>
         <div className="my-[2%] flex">
           <img src={collection.src} className="w-80 h-100"/>
-          <p className="ml-4 text-2xl">{collection.description}</p>
+          <p className="ml-4 text-2xl hidden md:block">{collection.description}</p>
         </div>
       </div>
       <Footer />
