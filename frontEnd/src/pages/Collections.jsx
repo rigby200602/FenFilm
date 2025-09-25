@@ -25,6 +25,19 @@ const Collections = () => {
         </div>
         <p className="ml-4 text-lg block md:hidden">{collection.description}</p>
       </div>
+      { filmsInCollection.length > 0 ? (
+        <div>
+          {filmsInCollection.map(film => (
+            
+          ))}
+        </div>
+      ) : (
+        <div>
+
+        </div>
+      )
+
+      }
       <Footer />
     </div>
   );
