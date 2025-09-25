@@ -19,10 +19,11 @@ const Collections = () => {
       <NavBar />
       <div className="mx-[5%]">
         <h2 className="text-4xl text-center md:text-start">{collection.name}</h2>
-        <div className="my-[2%] flex">
+        <div className="my-[2%] flex justify-center">
           <img src={collection.src} className="w-80 h-100"/>
           <p className="ml-4 text-2xl hidden md:block">{collection.description}</p>
         </div>
+        <p className="ml-4 text-lg block md:hidden">{collection.description}</p>
       </div>
       <Footer />
     </div>
