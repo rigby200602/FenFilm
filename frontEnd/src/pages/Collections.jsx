@@ -14,7 +14,7 @@ const Collections = () => {
   // find film with same collection
   const filmsInCollection = lists.filter(f => f.collection === Number(id));
   // check if collection valid or not?
-  if (!collection) return <div>Collection not found</div>;
+  if (!collection) return <div className="flex justify-center items-center text-5xl text-white min-h-screen">Collection not found</div>;
   return (
     <div className="text-white">
       <NavBar />
