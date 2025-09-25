@@ -18,7 +18,7 @@ const Collections = () => {
     <div className="text-white">
       <NavBar />
       <div className="mx-[5%]">
-        <h2 className="text-4xl">{collection.name}</h2>
+        <h2 className="text-4xl text-center md:text-start">{collection.name}</h2>
         <div className="my-[2%] flex">
           <img src={collection.src} className="w-80 h-100"/>
           <p className="ml-4 text-2xl">{collection.description}</p>
