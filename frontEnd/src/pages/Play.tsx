@@ -9,6 +9,9 @@ const Play = () => {
     return (
     <div>
         <NavBar />
+        <div className="my-5">
+
+        </div>
         <Footer />
     </div>
   )
