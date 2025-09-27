@@ -13,6 +13,8 @@ const Collections = () => {
   const collection = collections.find(c => c.id === Number(id))
   // find film with same collection
   const filmsInCollection = lists.filter(film => film.collection === collection?.id);
+  // show 4 films only
+  const data = filmsInCollection.filter(item => item.id < 5);
   // check if collection valid or not?
   if (!collection) return <div className="flex justify-center items-center text-5xl text-white min-h-screen">Collection not found</div>;
   return (
@@ -30,7 +32,7 @@ const Collections = () => {
       { filmsInCollection.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[5%] my-8">
           {/* render box for each episode */}
-          {filmsInCollection.map((film,id) => (
+          {data.map((film,id) => (
             <Box key={id} data={film} />
           ))}
         </div>
