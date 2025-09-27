@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 const Play = () => {
     // get id from url
     const {id} = useParams()
+    // fetch film url from database
     return (
     <div>
         <NavBar />
