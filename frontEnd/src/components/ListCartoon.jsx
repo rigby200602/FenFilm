@@ -11,7 +11,7 @@ const ListCartoon = (props) => {
         <h1 className="text-3xl text-white text-center md:text-start">{props.title}</h1>
       </Link>  
       {/* Show box */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {data.map((item,i) => {
           return (        
                 <Box key={i} data={item} />
