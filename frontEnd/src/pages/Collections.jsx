@@ -13,6 +13,8 @@ const Collections = () => {
   const collection = collections.find(c => c.id === Number(id))
   // find film with same collection
   const filmsInCollection = lists.filter(film => film.collection === collection?.id);
+  // only show 4 box
+  const data = props.data.filter(item => item.id < 5);
   // check if collection valid or not?
   if (!collection) return <div className="flex justify-center items-center text-5xl text-white min-h-screen">Collection not found</div>;
   return (
