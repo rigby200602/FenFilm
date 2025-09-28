@@ -14,7 +14,7 @@ const Play = () => {
     return (
     <div>
         <NavBar />
-        <div className="my-5">
+        <div className="my-5 mx-[5%]">
           <video key={id} className="w-full h-[90vh]" controls autoPlay>
             <source src={filmUrl} type="video/mp4" />
             Your browser does not support the video tag.
