@@ -11,7 +11,6 @@ const Play = () => {
     const film = lists.find(film => film.id === Number(id))
     // get film url
     const filmUrl = film ? film.url : ''
-    console.log(filmUrl)
     return (
     <div>
         <NavBar />
