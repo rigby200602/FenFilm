@@ -11,14 +11,19 @@ const Play = () => {
     const film = lists.find(film => film.id === Number(id))
     // get film url
     const filmUrl = film ? film.url : ''
+    console.log(filmUrl)
     return (
     <div>
         <NavBar />
         <div className="my-5 mx-[5%]">
-          <video key={id} className="w-full h-[90vh]" controls autoPlay>
-            <source src={filmUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <iframe
+            key={id}
+            src={filmUrl}
+            title={film?.title}
+            allow='autoplay; fullscreen; picture-in-picture'
+            className="w-full h-[80vh] rounded-lg bg-black"
+          >
+          </iframe>
         </div>
         <Footer />
     </div>
