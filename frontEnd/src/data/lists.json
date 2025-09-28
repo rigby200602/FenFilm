@@ -3,30 +3,35 @@
             "id": 1,
             "title": "Tập 1 - Mystery Meat",
             "thumnail": "/s1e1.webp",
-            "collection": 101
+            "collection": 101,
+            "url": "https://www.dailymotion.com/embed/video/x7u5z6e"
         },
         {
             "id": 2,
             "title": "Tập 2 - Parental Bonding",
             "thumnail": "/s1e2.webp",
-            "collection": 101
+            "collection": 101,
+            "url": "https://www.dailymotion.com/embed/video/x7u5z6e"
         }, 
         {
             "id": 3,
             "title": "Tập 2 - Parental Bonding",
             "thumnail": "/s1e2.webp",
-            "collection": 101
+            "collection": 101,
+            "url": "https://www.dailymotion.com/embed/video/x7u5z6e"
         },
         {
             "id": 4,
             "title": "Tập 2 - Parental Bonding",
             "thumnail": "/s1e2.webp",
-            "collection": 101
+            "collection": 101,
+            "url": "https://www.dailymotion.com/embed/video/x7u5z6e"
         },
         {
             "id": 5,
             "title": "Tập 2 - Parental Bonding",
             "thumnail": "/s1e2.webp",
-            "collection": 101
+            "collection": 101,
+            "url": "https://www.dailymotion.com/embed/video/x7u5z6e"
         }
 ]
