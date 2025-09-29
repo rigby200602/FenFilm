@@ -20,6 +20,7 @@ const Play = () => {
             key={id}
             src={filmUrl}
             title={film?.title}
+            loading='lazy'
             allow='autoplay; picture-in-picture; fullscreen'
             className="w-full h-[60vh] md:h-[80vh] rounded-lg bg-black"
           >
