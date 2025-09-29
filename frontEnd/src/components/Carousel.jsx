@@ -10,7 +10,7 @@ const Carousel = ({ data }) => {
   };
   // Function to go to the previous slide
   const prevSlide = () => {
-    setSlide(slide === data.length - 1 ? 0 : slide - 1);
+    setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
 
   return (
