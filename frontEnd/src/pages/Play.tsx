@@ -21,7 +21,7 @@ const Play = () => {
             src={filmUrl}
             title={film?.title}
             allow='autoplay; picture-in-picture; fullscreen'
-            className="w-full h-[80vh] rounded-lg bg-black"
+            className="w-full h-[60vh] md:h-[80vh] rounded-lg bg-black"
           >
           </iframe>
         </div>
