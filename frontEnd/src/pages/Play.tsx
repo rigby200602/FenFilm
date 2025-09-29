@@ -11,6 +11,7 @@ const Play = () => {
     const film = lists.find(film => film.id === Number(id))
     // get film url
     const filmUrl = film ? film.url : ''
+    console.log(filmUrl)
     return (
     <div>
         <NavBar />
@@ -19,7 +20,7 @@ const Play = () => {
             key={id}
             src={filmUrl}
             title={film?.title}
-            allow='autoplay; fullscreen; picture-in-picture'
+            allow='autoplay'
             className="w-full h-[80vh] rounded-lg bg-black"
           >
           </iframe>
