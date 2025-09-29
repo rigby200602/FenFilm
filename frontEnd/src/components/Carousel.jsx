@@ -30,6 +30,7 @@ const Carousel = ({ data }) => {
             key={i}
             src={item.url}
             alt={item.title}
+            loading="lazy"
             className={slide === i ? "w-full max-h-135" : "hidden"}
           />
         );
