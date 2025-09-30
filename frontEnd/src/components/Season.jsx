@@ -2,7 +2,9 @@ import React from 'react'
 
 const Season = () => {
   return (
-    <div>Season</div>
+    <div className='mx-[5%] my-4'>
+        
+    </div>
   )
 }
 
