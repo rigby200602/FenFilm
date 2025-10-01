@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import lists from '../data/lists.json'
 import seasons from '../data/seasons.json'
+import Season from '../components/Season'
 
 
 const Play = () => {
@@ -28,6 +29,9 @@ const Play = () => {
           >
           </iframe>
         </div>
+        {seasons.map(() => (
+          <Season />
+        ))}
         <Footer />
     </div>
   )
