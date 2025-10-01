@@ -29,9 +29,9 @@ const Play = () => {
           >
           </iframe>
         </div>
-        {seasons.map(() => (
-          <Season />
-        ))}
+        {seasons.map((season,i) => (
+          <Season key={i} />
+        ))} 
         <Footer />
     </div>
   )
