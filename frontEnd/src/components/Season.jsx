@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Season = (props) => {
+const Season = ({data}) => {
   return (
     <div className='flex mx-[5%] my-4 text-white'>
-        <h1 className='text-3xl'>{props.name}</h1>
+        <h1 className='text-3xl'>{data.name}</h1>
     </div>
   )
 }
