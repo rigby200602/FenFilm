@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import lists from '../data/lists.json'
+import seasons from '../data/seasons.json'
+
 
 const Play = () => {
     // get id from url
