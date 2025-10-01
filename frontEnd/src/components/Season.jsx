@@ -1,7 +1,10 @@
 import React from 'react'
 import lists  from '../data/lists.json'
+import { useParams } from 'react-router-dom'
 
 const Season = () => {
+  // fetch id from url
+  const {id} = useParams();
   // fetch season data
   const season = lists.filter(s => s.season === Number(id));
   return (
