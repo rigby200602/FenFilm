@@ -5,13 +5,15 @@ import Footer from '../components/Footer'
 import lists from '../data/lists.json'
 import seasons from '../data/seasons.json'
 import Season from '../components/Season'
+import { filmData } from '../context/AppContext'
+
 
 
 const Play = () => {
     // get id from url
     const {id} = useParams()
     // fetch film url from database
-    const film = lists.find(film => film.id === Number(id))
+    const film = filmData(id || '')
     // get film url
     const filmUrl = film ? film.url : ''
     return (
