@@ -1,10 +1,13 @@
 import React, { createContext } from 'react'
+import lists from '../data/lists.json'
 
-export const film = lists.find(film => film.id === Number(id))
+export const filmData = (id) => {
+  return (lists.find(film => film.id === Number(id)))
+}
 
-export default AppContext = createContext()
+export const AppContext = createContext();
 
-export const AppProvider = ({children}) => {
+export const AppContextProvider = ({children}) => {
   return (
     <AppContext.Provider value={{}}>
       {children}
