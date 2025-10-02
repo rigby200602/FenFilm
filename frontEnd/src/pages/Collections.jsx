@@ -21,16 +21,16 @@ const Collections = () => {
     <div className="text-white">
       <NavBar />
       <div className="mx-[5%]">
-        <h2 className="text-4xl text-center md:text-start">{collection.name}</h2>
-        <div className="my-[2%] flex justify-center">
+        <h2 className="text-4xl text-center my-[4%] md:my-[2%] md:text-start">{collection.name}</h2>
+        <div className="flex justify-center">
           <img src={collection.src} className="w-80 h-100"/>
           <p className="ml-4 text-2xl hidden md:block">{collection.description}</p>
         </div>
-        <p className="ml-4 text-lg block md:hidden">{collection.description}</p>
+        <p className="ml-4 mt-[6%] text-lg block md:hidden">{collection.description}</p>
       </div>
       {/* check if film has any value */}
       { filmsInCollection.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[5%] my-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[5%]">
           {/* render box for each episode */}
           {data.map((film,id) => (
             <Box key={id} data={film} />
