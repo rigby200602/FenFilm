@@ -8,12 +8,13 @@ const Season = ({data}) => {
   // fetch id from url
   const {id} = useParams();
   // get season data
-  const season = data;
+  const season = seasons.find(s => s.id === data)
+  console.log(season);
   // get film data from id
   const film = filmData(id);
   return (
     <div className='flex mx-[5%] my-4 text-white'>
-        <h1 className='text-3xl hidden md:block'>{data.name}</h1>
+        <h1 className='text-xl hidden md:block'>{season.name}</h1>
         {}
     </div>
   )
