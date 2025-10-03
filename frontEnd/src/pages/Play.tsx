@@ -17,7 +17,8 @@ const Play = () => {
     const filmUrl = film ? film.url : ''
     // find collection by id
     const findCollection = collections.find(collection => collection.id === Number(id))
-    
+    // get seasons from collection
+    const seasons = findCollection ? findCollection.seasons : []
     return (
     <div>
         <NavBar />
