@@ -2,10 +2,9 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import lists from '../data/lists.json'
-import seasons from '../data/seasons.json'
 import Season from '../components/Season'
 import { filmData } from '../context/AppContext'
+import collections from '../data/collections.json'
 
 
 
@@ -16,6 +15,9 @@ const Play = () => {
     const film = filmData(id || '')
     // get film url
     const filmUrl = film ? film.url : ''
+    // find collection by id
+    const findCollection = collections.find(collection => collection.id === Number(id))
+    
     return (
     <div>
         <NavBar />
