@@ -15,6 +15,9 @@ const Play = () => {
     const film = filmData(id || '')
     // get film url
     const filmUrl = film ? film.url : ''
+    // get collection though film id
+    const collectionId = film ? film.collection : null
+    console.log(collectionId)
     // find collection by id
     const findCollection = collections.find(collection => collection.id === Number(id))
     // get seasons from collection
