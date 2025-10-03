@@ -17,11 +17,6 @@ const Play = () => {
     const filmUrl = film ? film.url : ''
     // get id collection
     const collectionId = film ? film.collection : null
-    console.log(collectionId)
-    // find collection by id
-    const findCollection = collections.find(collection => collection.id === Number(id))
-    // get seasons from collection
-    const seasons = findCollection ? findCollection.seasons : []
     return (
     <div>
         <NavBar />
@@ -36,9 +31,9 @@ const Play = () => {
           >
           </iframe>
         </div>
-        {seasons.map((season,i) => (
+        {/* {seasons.map((season,i) => (
           <Season key={i} />
-        ))} 
+        ))}  */}
         <Footer />
     </div>
   )
