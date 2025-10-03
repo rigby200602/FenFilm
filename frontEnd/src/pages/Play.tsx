@@ -33,9 +33,10 @@ const Play = () => {
           >
           </iframe>
         </div>
-        {/* {seasons.map((season,i) => (
-          <Season key={i} />
-        ))}  */}
+        {/* Check if seasons null or not, will render if have any attribute */}
+        { seasons ? (seasons.map((season,id) => {
+          return <Season key={id} data={season}/>
+        })) : null }
         <Footer />
     </div>
   )
