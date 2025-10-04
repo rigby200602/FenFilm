@@ -16,7 +16,7 @@ const Season = ({data}) => {
     <div className='flex mx-[5%] mb-4 text-white'>
         <h1 className='text-xl hidden md:block w-70'>{season.name}</h1>
           {listFilm.map((item,id) => (
-          <div key={id} className='mx-2 w-10 hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white cursor-pointer'>
+          <div key={id} className='grid grid-cols-6 md:flex mx-2 justify-center items-center max-w-14 md:w-20 h-8 hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white cursor-pointer'>
             <p className='text-center'>{item.id}</p>
           </div>
         ))}
