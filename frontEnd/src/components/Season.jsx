@@ -13,9 +13,15 @@ const Season = ({data}) => {
   const listFilm = lists.filter(l => l.season === season.id)
   console.log(listFilm);
   return (
-    <div className='flex mx-[5%] my-4 text-white'>
+    <div className='mx-[5%] my-4 text-white'>
         <h1 className='text-xl hidden md:block'>{season.name}</h1>
-        {}
+        <div>
+          {listFilm.map((item,id) => (
+          <div key={id} className='mx-2'>
+            <p>{item.id}</p>
+          </div>
+        ))}
+        </div>
     </div>
   )
 }
