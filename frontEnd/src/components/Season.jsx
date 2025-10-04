@@ -15,7 +15,7 @@ const Season = ({data}) => {
   return (
     <div className='mx-[5%] my-4 text-white'>
         <h1 className='text-xl hidden md:block'>{season.name}</h1>
-        <div>
+        <div className='flex'>
           {listFilm.map((item,id) => (
           <div key={id} className='mx-2'>
             <p>{item.id}</p>
