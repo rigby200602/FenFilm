@@ -15,11 +15,11 @@ const Season = ({ data }) => {
   return (
     <div className="mx-[5%] mb-4 text-white flex">
       <h1 className="text-xl hidden lg:block w-70">{season.name} :</h1>
-      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2">
+      <div className="grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
         {listFilm.map((item, id) => (
           <div
             key={id}
-            className="w-24 h-10 cursor-pointer py-[5%] mx-auto
+            className="md:w-24 h-10 cursor-pointer py-[5%] mx-auto
           hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
           // for reponsive
           border border-white rounded-2xl text-black bg-white
