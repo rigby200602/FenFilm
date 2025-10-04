@@ -17,7 +17,12 @@ const Season = ({data}) => {
         <h1 className='text-xl hidden md:block w-70'>{season.name}</h1>
           {listFilm.map((item,id) => (
           <div key={id} className='mx-2 max-w-14 md:w-20 h-8 cursor-pointer py-0.5
-          hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white'>
+          hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
+          // for reponsive
+          border border-white rounded-2xl text-black bg-white
+          md:border-0 md:rounded-none md:text-white md:bg-transparent
+          '
+          >
             <p className='text-center'>{item.id}</p>
           </div>
         ))}
