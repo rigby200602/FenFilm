@@ -10,7 +10,8 @@ const Season = ({data}) => {
   // get season data
   const season = seasons.find(s => s.id === data)
   // get list film through season
-  const listFilm = lists.find(l => l.season === season.id)
+  const listFilm = lists.filter(l => l.season === season.id)
+  console.log(listFilm);
   return (
     <div className='flex mx-[5%] my-4 text-white'>
         <h1 className='text-xl hidden md:block'>{season.name}</h1>
