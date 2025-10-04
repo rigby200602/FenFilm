@@ -13,14 +13,14 @@ const Season = ({data}) => {
   const listFilm = lists.filter(l => l.season === season.id)
   console.log(listFilm);
   return (
-    <div className='md:flex mx-[5%] mb-4 text-white grid grid-cols-6 gap-4'>
-        <h1 className='text-xl hidden md:block w-70'>{season.name}</h1>
+    <div className='lg:flex mx-[5%] mb-4 text-white grid grid-cols-4 md:grid-cols-6 gap-4'>
+        <h1 className='text-xl hidden lg:block w-70'>{season.name}</h1>
           {listFilm.map((item,id) => (
-          <div key={id} className='mx-2 max-w-14 md:w-20 h-8 cursor-pointer py-0.5
+          <div key={id} className='mx-2 w-18 md:w-20 h-8 cursor-pointer py-0.5
           hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
           // for reponsive
           border border-white rounded-2xl text-black bg-white
-          md:border-0 md:rounded-none md:text-white md:bg-transparent
+          lg:border-0 lg:rounded-none lg:text-white lg:bg-transparent
           '
           >
             <p className='text-center'>{item.id}</p>
