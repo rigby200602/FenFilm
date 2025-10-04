@@ -9,7 +9,6 @@ const Season = ({data}) => {
   const {id} = useParams();
   // get season data
   const season = seasons.find(s => s.id === data)
-  console.log(season);
   // get film data from id
   const film = filmData(id);
   return (
