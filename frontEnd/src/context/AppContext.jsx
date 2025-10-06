@@ -1,5 +1,6 @@
-import React, { createContext } from 'react'
+import React, { createContext, use } from 'react'
 import lists from '../data/lists.json'
+import { useNavigate } from 'react-router-dom';
 
 // function to get film data by id
 export const filmData = (id) => {
@@ -9,6 +10,9 @@ export const filmData = (id) => {
 export const AppContext = createContext();
 
 export const AppContextProvider = ({children}) => {
+  
+  const navigate = useNavigate();
+
   return (
     <AppContext.Provider value={{}}>
       {children}
