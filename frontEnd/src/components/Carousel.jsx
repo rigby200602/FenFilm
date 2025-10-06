@@ -33,7 +33,7 @@ const Carousel = ({ data }) => {
             src={item.url}
             alt={item.title}
             loading="lazy"
-            className={slide === i ? "w-full max-h-135" : "hidden"}
+            className={slide === i ? "w-full max-h-135 cursor-pointer" : "hidden"}
             onClick={() => navigate(`/collections/${item.collection}`)}
           />
         );
