@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="hidden md:block flex-col  w-[25%]"></div>
         <div className="hidden md:block flex-col  w-[25%]"></div>
         <div className="flex flex-col justify-center items-center w-[25%]">
-          <Link to={"/"}
+          <Link to={"/"} onClick={() => window.scrollTo(0, 0)}
           className="text-4xl font-bold cursor-pointer">FenFilm</Link>
           <div className="flex my-4">
             <Link to={'https://www.facebook.com/fensub20'}><FaFacebookSquare className="mx-4 cursor-pointer mt-[2px]" size={50}/></Link>
