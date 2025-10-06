@@ -13,8 +13,10 @@ export const AppContextProvider = ({children}) => {
   
   const navigate = useNavigate();
 
+  const value = { navigate, filmData };
+
   return (
-    <AppContext.Provider value={{}}>
+    <AppContext.Provider value={{value}}>
       {children}
     </AppContext.Provider>
   )
