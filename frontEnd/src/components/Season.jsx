@@ -11,12 +11,14 @@ const Season = ({ data }) => {
   const season = seasons.find((s) => s.id === data);
   // get list film through season
   const listFilm = lists.filter((l) => l.season === season.id);
-  console.log(listFilm);
   return (
-    <div className="mx-[5%] mb-4 text-white flex">
-      <h1 className="text-xl hidden lg:block w-70">{season.name} :</h1>
-      <div className="grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
-        {listFilm.map((item, id) => (
+    // check if listFilm have any value, only show when have value
+    <>
+    { listFilm.length ? ( 
+      <div className="mx-[5%] mb-4 text-white flex">
+        <h1 className="text-xl hidden lg:block w-70">{season.name} :</h1>
+        <div className="grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
+          {listFilm.map((item, id) => (
           <div
             key={id}
             className="w-16 sm:w-20 md:w-22 lg:w-24 h-10 cursor-pointer py-[5%] mx-auto
@@ -31,6 +33,8 @@ const Season = ({ data }) => {
         ))}
       </div>
     </div>
+) : (null) } 
+   </>
   );
 };
 
