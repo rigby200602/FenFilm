@@ -5,11 +5,12 @@ import NavBar from "./components/NavBar"
 import {slides} from "./data/slides.json"
 import lists from './data/lists.json'
 import collections from './data/collections.json'
+import { AppContextProvider } from "./context/AppContext"
 
 function App() {
 
   return (
-    <div>
+    <AppContextProvider>
       <NavBar />
       <Carousel data={slides}/>
       {collections.map((item, i) => {
@@ -19,7 +20,7 @@ function App() {
       })
       }
       <Footer />
-    </div>
+    </AppContextProvider>
   )
 }
 
