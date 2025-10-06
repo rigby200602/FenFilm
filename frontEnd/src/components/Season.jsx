@@ -20,6 +20,7 @@ const Season = ({ data }) => {
         <div className="grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
           {listFilm.map((item, id) => (
           <Link
+            to={`/play/${item.id}`}
             key={id}
             className="w-16 sm:w-20 md:w-22 lg:w-24 h-10 cursor-pointer py-[5%] mx-auto
           hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
