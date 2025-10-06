@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { AppContext } from "../context/AppContext";
 
 const Carousel = ({ data }) => {
-  // State to keep track of the current slide
+  const { navigate } = useContext(AppContext)
+   // State to keep track of the current slide
   const [slide, setSlide] = useState(0);
   // Function to go to the next slide
   const nextSlide = () => {
@@ -32,6 +34,7 @@ const Carousel = ({ data }) => {
             alt={item.title}
             loading="lazy"
             className={slide === i ? "w-full max-h-135" : "hidden"}
+            onClick={() => navigate(`/collections/${item.collection}`)}
           />
         );
       })}
@@ -49,10 +52,15 @@ const Carousel = ({ data }) => {
             <button
               key={i}
               onClick={() => setSlide(i)}
-              className={slide === i ? "text-white text-3xl md:text-4xl lg:text-5xl cursor-pointer" : "text-gray-400 text-3xl md:text-4xl lg:text-5xl cursor-pointer"}>
+              className={
+                slide === i
+                  ? "text-white text-3xl md:text-4xl lg:text-5xl cursor-pointer"
+                  : "text-gray-400 text-3xl md:text-4xl lg:text-5xl cursor-pointer"
+              }
+            >
               •
             </button>
-          )
+          );
         })}
       </span>
     </div>
