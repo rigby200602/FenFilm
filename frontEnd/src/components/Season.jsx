@@ -1,8 +1,8 @@
 import React from "react";
 import lists from "../data/lists.json";
 import { Link, useParams } from "react-router-dom";
-import { filmData } from "../context/AppContext";
 import seasons from "../data/seasons.json";
+import App from "../App";
 
 const Season = ({ data }) => {
   // fetch id from url
