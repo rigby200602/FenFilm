@@ -1,20 +1,23 @@
-import React, { createContext } from 'react'
+import React, { createContext, useContext } from 'react'
 import lists from '../data/lists.json'
 import { useNavigate } from 'react-router-dom';
 
-// function to get film data by id
-
+// custom hook for call context
+export const useApp = () => useContext(AppContext);
+// create context
 export const AppContext = createContext();
 
 export const AppContextProvider = ({children}) => {
   
+  
+  //navigation 
   const navigate = useNavigate();
   // get film data by id
   const filmData = (id) => {
   return (lists.find(film => film.id === Number(id)))
 }
 
-  const value = { navigate, filmData };
+  const value = { AppContext,navigate, filmData };
 
   return (
     <AppContext.Provider value={value}>
