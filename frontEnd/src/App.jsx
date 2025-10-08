@@ -15,7 +15,7 @@ function App() {
       <Carousel data={slides}/>
       {collections.map((item, i) => {
         return (
-          <ListCartoon key={i} title={item.name} data={lists} collections={item.id}/>
+          <ListCartoon key={i} title={item.name} data={lists} collection={item.id}/>
         )
       })
       }
