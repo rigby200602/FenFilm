@@ -10,8 +10,6 @@ export const AppContext = createContext();
 
 export const AppContextProvider = ({children}) => {
   
-  // get Id
-  const id = useParams();
   //navigation 
   const navigate = useNavigate();
   // get film data by id
@@ -19,7 +17,7 @@ export const AppContextProvider = ({children}) => {
   return (lists.find(film => film.id === Number(id)))
 }
 
-  const value = { id,navigate, filmData };
+  const value = {navigate, filmData };
 
   return (
     <AppContext.Provider value={value}>

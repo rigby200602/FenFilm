@@ -9,7 +9,7 @@ import { useApp } from "../context/AppContext";
 
 const Collections = () => {
   // get collection thorough id
-  const { id } = useApp()
+  const { id } = useParams();
   // create collection that have all film with same id
   const collection = collections.find((c) => c.id === Number(id));
   // find film with same collection

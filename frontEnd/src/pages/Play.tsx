@@ -7,8 +7,10 @@ import collections from "../data/collections.json";
 import { useApp } from "../context/AppContext";
 
 const Play = () => {
+  //  get data
+  const { filmData } = useApp();
   // get id from url
-  const { id, filmData } = useApp();
+  const { id } = useParams();
   // fetch film url from database
   const film = filmData(id || "");
   // get film url
