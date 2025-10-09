@@ -9,7 +9,6 @@ const ListCartoon = (props) => {
   const list = props.data.filter(i => i.collection === collection);
   // only show 4 box
   const data = list.filter((item) => item.id < 5);
-  console.log(list)
   return (
     <div className="h-[15%] min-h- mx-[5%] mt-8">
       {data.length > 0 ? (
