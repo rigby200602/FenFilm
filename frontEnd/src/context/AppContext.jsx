@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react'
+import React, { createContext, use, useContext } from 'react'
 import lists from '../data/lists.json'
 import { useNavigate } from 'react-router-dom';
 
@@ -9,7 +9,8 @@ export const AppContext = createContext();
 
 export const AppContextProvider = ({children}) => {
   
-  
+  // get Id
+  const id = useParams();
   //navigation 
   const navigate = useNavigate();
   // get film data by id
