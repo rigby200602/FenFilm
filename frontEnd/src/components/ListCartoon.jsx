@@ -3,8 +3,13 @@ import Box from "./Box";
 import { Link } from "react-router-dom";
 
 const ListCartoon = (props) => {
+  // get collection
+  const collection = props.collection
+  // get all data from the collection
+  const list = props.data.filter(i => i.collection === collection);
   // only show 4 box
-  const data = props.data.filter((item) => item.id < 5);
+  const data = list.filter((item) => item.id < 5);
+  console.log(list)
   return (
     <div className="h-[15%] min-h- mx-[5%] mt-8">
       <Link to={`/collections/${props.collection}`}>
