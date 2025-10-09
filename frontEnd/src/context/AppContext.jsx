@@ -1,6 +1,7 @@
-import React, { createContext, use, useContext } from 'react'
+import React, { createContext, useContext } from 'react'
 import lists from '../data/lists.json'
 import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 // custom hook for call context
 export const useApp = () => useContext(AppContext);
