@@ -4,14 +4,11 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Season from "../components/Season";
 import collections from "../data/collections.json";
-import { AppContext } from "../context/AppContext";
+import { useApp } from "../context/AppContext";
 
 const Play = () => {
-  // call context
-  const { filmData } = useContext(AppContext);
-
   // get id from url
-  const { id } = useParams();
+  const { id, filmData } = useApp();
   // fetch film url from database
   const film = filmData(id || "");
   // get film url

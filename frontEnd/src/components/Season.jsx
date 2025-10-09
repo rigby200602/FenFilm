@@ -3,10 +3,11 @@ import lists from "../data/lists.json";
 import { Link, useParams } from "react-router-dom";
 import seasons from "../data/seasons.json";
 import App from "../App";
+import { useApp } from "../context/AppContext";
 
 const Season = ({ data }) => {
   // fetch id from url
-  const { id } = useParams();
+  const { id } = useApp();
   // get season data
   const season = seasons.find((s) => s.id === data);
   // get list film through season

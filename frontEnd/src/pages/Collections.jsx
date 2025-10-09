@@ -5,10 +5,11 @@ import { useParams } from "react-router-dom";
 import collections from "../data/collections.json";
 import lists from "../data/lists.json";
 import Box from "../components/Box";
+import { useApp } from "../context/AppContext";
 
 const Collections = () => {
   // get collection thorough id
-  const { id } = useParams();
+  const { id } = useApp()
   // create collection that have all film with same id
   const collection = collections.find((c) => c.id === Number(id));
   // find film with same collection
