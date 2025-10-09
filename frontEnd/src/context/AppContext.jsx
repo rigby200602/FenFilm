@@ -19,7 +19,7 @@ export const AppContextProvider = ({children}) => {
   return (lists.find(film => film.id === Number(id)))
 }
 
-  const value = { AppContext,navigate, filmData };
+  const value = { id,navigate, filmData };
 
   return (
     <AppContext.Provider value={value}>
