@@ -28,12 +28,12 @@ const Collections = () => {
     <div className="text-white">
       <NavBar />
       <div className="mx-[5%]">
-        <h2 className="text-4xl text-center my-[4%] md:my-[2%] md:text-start">
+        <h2 className="text-2xl md:text-4xl text-center my-[4%] md:my-[2%] md:text-start">
           {collection.name}
         </h2>
         <div className="flex justify-center">
           <img src={collection.src} className="w-80 h-100" />
-          <p className="ml-4 text-2xl hidden md:block">
+          <p className="ml-4 text-xl md:text-2xl hidden md:block">
             {collection.description}
           </p>
         </div>
