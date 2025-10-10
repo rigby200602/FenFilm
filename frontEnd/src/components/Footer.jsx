@@ -9,7 +9,9 @@ const Footer = () => {
       {/* White line */}
       <div className="bg-white h-[1px] my-4"></div>
       <div className="flex w-full h-[75%] justify-center items-center">
-        <div className="hidden md:block flex-col  w-[25%]"></div>
+        <div className="hidden md:block flex-col  w-[25%]">
+          <Link to={'/about-us'} className="text-3xl">Chúng tôi</Link>
+        </div>
         <div className="hidden md:block flex-col  w-[25%]"></div>
         <div className="hidden md:block flex-col  w-[25%]"></div>
         <div className="flex flex-col justify-center items-center w-[25%]">
