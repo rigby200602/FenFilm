@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line } from "react-icons/ri";
 
 const NavBar = () => {
+  const [isOn, setIsOn] = useState(false);
   return (
     <div className="w-full mb-[2%]">
       <div className="flex text-white mx-[5%] mt-4 justify-center">
