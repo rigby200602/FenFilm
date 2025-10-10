@@ -23,6 +23,7 @@ const NavBar = () => {
           <RiMenu3Line
             size={40}
             className="text-white ml-[5%] cursor-pointer"
+            onClick={setIsOn(true)}
           />
         </div>
       </div>
