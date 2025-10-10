@@ -21,7 +21,7 @@ const NavBar = () => {
         <div className="block md:hidden ml-auto">
           <RiMenu3Line
             size={40}
-            className="text-white ml-[5%] mt-2 cursor-pointer"
+            className="text-white ml-[5%] cursor-pointer"
           />
         </div>
       </div>
