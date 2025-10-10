@@ -22,6 +22,7 @@ const Season = ({ data }) => {
           <Link
             to={`/play/${item.id}`}
             key={id}
+            onClick={()=> scrollTo(0,0)}
             className="w-16 sm:w-20 md:w-22 lg:w-24 h-10 cursor-pointer py-[5%] mx-auto
           hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
           // for reponsive
