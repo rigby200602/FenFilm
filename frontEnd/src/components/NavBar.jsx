@@ -23,11 +23,18 @@ const NavBar = () => {
           <RiMenu3Line
             size={40}
             className="text-white ml-[5%] cursor-pointer"
-            onClick={()=>{
-              if (isOn === false) {setIsOn(true)}
-              else {setIsOn(false)}
-              }}
+            onClick={() => {
+              if (isOn === false) {
+                setIsOn(true);
+              } else {
+                setIsOn(false);
+              }
+            }}
           />
+          {isOn ? 
+          <div>
+            
+          </div> : null}
         </div>
       </div>
       {/* White line */}
