@@ -29,7 +29,7 @@ const NavBar = () => {
             onClick={() => toggleMenu()}
           />
           {isOn ? 
-          <div className="h-100 bg-inherit">
+          <div className="absolute h-full bg-inherit">
             <Link to={"/about-us"}
               className="text-white"
             >Chúng tôi</Link>
