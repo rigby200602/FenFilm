@@ -22,7 +22,7 @@ const NavBar = () => {
           </Link>
         </div>
         {/* Menu for small screen */}
-        <div className="block md:hidden ml-auto">
+        <div className="absolute right-0 mr-[5%] md:hidden ml-auto">
           <RiMenu3Line
             size={40}
             className="text-white ml-[5%] cursor-pointer"
@@ -30,7 +30,9 @@ const NavBar = () => {
           />
           {isOn ? 
           <div className="h-100 bg-inherit">
-
+            <Link to={"/about-us"}
+              className="text-white"
+            >About Us</Link>
           </div> : null}
         </div>
       </div>
