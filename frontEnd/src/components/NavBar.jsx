@@ -6,11 +6,14 @@ const NavBar = () => {
   const [isOn, setIsOn] = useState(false);
   const toggleMenu = () => {
     setIsOn(!isOn);
-  }
+  };
   return (
     <div className="w-full mb-[2%]">
       <div className="flex text-white mx-[5%] mt-4 justify-center">
-        <Link to={"/"} className="text-4xl font-bold cursor-pointer">
+        <Link
+          to={"/"}
+          className="text-4xl font-bold cursor-pointer text-center"
+        >
           FenFilm
         </Link>
         <div className="ml-auto hidden md:block">
@@ -21,20 +24,21 @@ const NavBar = () => {
             Chúng tôi
           </Link>
         </div>
-        {/* Menu for small screen */}
-        <div className="absolute right-0 mr-[5%] md:hidden ml-auto">
-          <RiMenu3Line
-            size={40}
-            className="text-white ml-[5%] cursor-pointer"
-            onClick={() => toggleMenu()}
-          />
-          {isOn ? 
-          <div className="absolute h-full bg-inherit">
-            <Link to={"/about-us"}
-              className="text-white"
-            >Chúng tôi</Link>
-          </div> : null}
-        </div>
+      </div>
+      {/* Menu for small screen */}
+      <div className="block ml-[5%] md:hidden mt-4">
+        <RiMenu3Line
+          size={40}
+          className="text-white cursor-pointer"
+          onClick={() => toggleMenu()}
+        />
+        {isOn ? (
+          <div className="h-100 bg-inherit">
+            <Link to={"/about-us"} className="text-white">
+              Chúng tôi
+            </Link>
+          </div>
+        ) : null}
       </div>
       {/* White line */}
       <div className="bg-white h-[1px] mt-[1%] mx-[5%]"></div>
