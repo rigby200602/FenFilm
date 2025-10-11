@@ -32,7 +32,7 @@ const NavBar = () => {
           <div className="h-100 bg-inherit">
             <Link to={"/about-us"}
               className="text-white"
-            >About Us</Link>
+            >Chúng tôi</Link>
           </div> : null}
         </div>
       </div>
