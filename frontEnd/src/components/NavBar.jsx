@@ -4,6 +4,9 @@ import { RiMenu3Line } from "react-icons/ri";
 
 const NavBar = () => {
   const [isOn, setIsOn] = useState(false);
+  const toggleMenu = () => {
+    setIsOn(!isOn);
+  }
   return (
     <div className="w-full mb-[2%]">
       <div className="flex text-white mx-[5%] mt-4 justify-center">
@@ -23,17 +26,11 @@ const NavBar = () => {
           <RiMenu3Line
             size={40}
             className="text-white ml-[5%] cursor-pointer"
-            onClick={() => {
-              if (isOn === false) {
-                setIsOn(true);
-              } else {
-                setIsOn(false);
-              }
-            }}
+            onClick={() => toggleMenu()}
           />
           {isOn ? 
-          <div>
-            
+          <div className="">
+
           </div> : null}
         </div>
       </div>
