@@ -11,19 +11,23 @@ const SideBar = () => {
   return (
     <div>
       {/* Menu for small screen */}
-      <div className="absolute ml-[5%] left-0 md:hidden">
+      <div className="absolute left-0 md:hidden">
         <RiMenu3Line
           size={40}
-          className="text-white cursor-pointer"
+          className="text-white cursor-pointer ml-[5%]"
           onClick={() => toggleMenu()}
         />
-        {isOn ? (
-          <div className="transittion left-[-15vw] w-3xl h-lvw bg-inherit duration-300 ease-in-out">
-            <Link to={"/about-us"} className="text-white">
-              Chúng tôi
-            </Link>
-          </div>
-        ) : null}
+        <div className={`${isOn ? 'h-[300lvw] w-120':''} "flex flex-col transittion  bg-[#0e0e18] duration-300 ease-in-out z-1"`}>
+          <Link to={"/about-us"} className="text-white">
+            Chúng tôi
+          </Link>
+          <Link to={"/about-us"} className="text-white">
+            Chúng tôi
+          </Link>
+          <Link to={"/about-us"} className="text-white">
+            Chúng tôi
+          </Link>
+        </div>
       </div>
     </div>
   );
