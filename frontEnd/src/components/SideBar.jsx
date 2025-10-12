@@ -9,16 +9,16 @@ const SideBar = () => {
     setIsOn(!isOn);
   };
   return (
-    <div className="block mr-auto">
+    <div className="block mr-auto md:hidden">
       {/* Menu for small screen */}
-      <div className="md:hidden">
+      <div className="">
         <RiMenu3Line
           size={40}
           className="text-white cursor-pointer"
           onClick={() => toggleMenu()}
         />
         {isOn ? (
-          <div className="flex flex-col h-full w-80 bg-inherit duration-300 ease-in-out z-1">
+          <div className="flex flex-col bg-inherit h-full w-80  duration-300 ease-in-out z-1">
             <Link to={"/about-us"} className="text-white">
               Chúng tôi
             </Link>
