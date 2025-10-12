@@ -1,30 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RiMenu3Line } from "react-icons/ri";
 
 const NavBar = () => {
-  const [isOn, setIsOn] = useState(false);
-  const toggleMenu = () => {
-    setIsOn(!isOn);
-  };
   return (
     <div className="w-full mb-[2%]">
       <div className="flex text-white mx-[5%] mt-4 justify-center">
-        {/* Menu for small screen */}
-        <div className="absolute ml-[5%] left-0 md:hidden">
-          <RiMenu3Line
-            size={40}
-            className="text-white cursor-pointer"
-            onClick={() => toggleMenu()}
-          />
-          {isOn ? (
-            <div className="h-100 bg-inherit">
-              <Link to={"/about-us"} className="text-white">
-                Chúng tôi
-              </Link>
-            </div>
-          ) : null}
-        </div>
         <Link to={"/"} className="text-4xl font-bold cursor-pointer">
           FenFilm
         </Link>
