@@ -18,7 +18,7 @@ const SideBar = () => {
           onClick={() => toggleMenu()}
         />
         {isOn ? (
-          <div className="h-100 bg-inherit">
+          <div className="transittion left-[-15vw] w-3xl h-lvw bg-inherit duration-300 ease-in-out">
             <Link to={"/about-us"} className="text-white">
               Chúng tôi
             </Link>
