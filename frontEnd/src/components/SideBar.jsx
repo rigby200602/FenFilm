@@ -9,25 +9,27 @@ const SideBar = () => {
     setIsOn(!isOn);
   };
   return (
-    <div>
+    <div className="block mr-auto">
       {/* Menu for small screen */}
-      <div className="absolute left-0 md:hidden">
+      <div className="md:hidden">
         <RiMenu3Line
           size={40}
-          className="text-white cursor-pointer ml-[5%]"
+          className="text-white cursor-pointer"
           onClick={() => toggleMenu()}
         />
-        <div className={`${isOn ? 'h-[300lvw] w-120':''} "flex flex-col transittion  bg-[#0e0e18] duration-300 ease-in-out z-1"`}>
-          <Link to={"/about-us"} className="text-white">
-            Chúng tôi
-          </Link>
-          <Link to={"/about-us"} className="text-white">
-            Chúng tôi
-          </Link>
-          <Link to={"/about-us"} className="text-white">
-            Chúng tôi
-          </Link>
-        </div>
+        {isOn ? (
+          <div className="flex flex-col h-full w-80 bg-inherit duration-300 ease-in-out z-1">
+            <Link to={"/about-us"} className="text-white">
+              Chúng tôi
+            </Link>
+            <Link to={"/about-us"} className="text-white">
+              Chúng tôi
+            </Link>
+            <Link to={"/about-us"} className="text-white">
+              Chúng tôi
+            </Link>
+          </div>
+        ) : null}
       </div>
     </div>
   );
