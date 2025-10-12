@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="w-full mb-[2%]">
       <div className="flex text-white mx-[5%] mt-4 justify-center">
         <SideBar/>
-        <Link to={"/"} className="text-4xl font-bold cursor-pointer">
+        <Link to={"/"} className="text-4xl font-bold cursor-pointer mr-auto">
           FenFilm
         </Link>
         <div className="ml-auto hidden md:block">
