@@ -18,7 +18,7 @@ const SideBar = () => {
           onClick={() => toggleMenu()}
         />
         {isOn ? (
-          <div className="flex flex-col bg-inherit h-full w-80  duration-300 ease-in-out z-1">
+          <div className="flex flex-col bg-inherit">
             <Link to={"/about-us"} className="text-white">
               Chúng tôi
             </Link>
