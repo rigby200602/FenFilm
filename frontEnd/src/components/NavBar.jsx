@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import SideBar from "./SideBar";
 
 const NavBar = () => {
   return (
     <div className="w-full mb-[2%]">
       <div className="flex text-white mx-[5%] mt-4 justify-center">
+        <SideBar/>
         <Link to={"/"} className="text-4xl font-bold cursor-pointer">
           FenFilm
         </Link>
