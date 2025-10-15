@@ -21,7 +21,7 @@ const SideBar = () => {
         {isOn ? (
           <div className="flex flex-col bg-inherit">
             <Link to={"/about-us"} className="text-white">
-              <span>
+              <span className="flex items-center">
                 <FaUserAlt />
                 Chúng tôi
               </span>
