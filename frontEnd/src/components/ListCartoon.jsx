@@ -10,7 +10,7 @@ const ListCartoon = (props) => {
   // only show 4 box
   const data = list.filter((item) => item.id < 5);
   return (
-    <div className="h-[15%] min-h- mx-[5%] mt-8">
+    <div className="h-[15%] mx-[5%] mt-8">
       {data.length > 0 ? (
       <>
       <Link to={`/collections/${props.collection}`}>
