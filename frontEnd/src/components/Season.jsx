@@ -17,14 +17,14 @@ const Season = ({ data }) => {
     { listFilm.length ? ( 
       <div className="mx-[5%] mb-4 text-white flex">
         <h1 className="text-xl hidden lg:block w-70">{season.name} :</h1>
-        <div className="grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
+        <div className="w-full grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
           {listFilm.map((item, id) => (
           <Link
             to={`/play/${item.id}`}
             key={id}
             onClick={()=> scrollTo(0,0)}
-            className="w-16 sm:w-20 md:w-22 lg:w-24 h-10 cursor-pointer py-[5%] mx-auto
-          hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
+            className="h-10 cursor-pointer py-[5%] mx-auto w-16 max-w-24 sm:w-20 md:w-18 lg:w-30
+          hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white transition
           // for reponsive
           border border-white rounded-2xl text-black bg-white
           lg:border-0 lg:rounded-none lg:text-white lg:bg-transparent
