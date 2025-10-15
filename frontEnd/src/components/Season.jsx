@@ -23,7 +23,7 @@ const Season = ({ data }) => {
             to={`/play/${item.id}`}
             key={id}
             onClick={()=> scrollTo(0,0)}
-            className="h-10 cursor-pointer py-[5%] mx-auto w-16 max-w-24 sm:w-20 md:w-18 lg:w-30
+            className="h-10 cursor-pointer py-[5%] mx-auto w-16 sm:w-20 md:w-18 lg:w-30
           hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white transition
           // for reponsive
           border border-white rounded-2xl text-black bg-white
