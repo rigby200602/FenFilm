@@ -2,6 +2,7 @@ import React from "react";
 const { useState } = React;
 import { RiMenu3Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { FaUserAlt } from "react-icons/fa";
 
 const SideBar = () => {
   const [isOn, setIsOn] = useState(false);
@@ -20,7 +21,10 @@ const SideBar = () => {
         {isOn ? (
           <div className="flex flex-col bg-inherit">
             <Link to={"/about-us"} className="text-white">
-              Chúng tôi
+              <span>
+                <FaUserAlt />
+                Chúng tôi
+              </span>
             </Link>
             <Link to={"/about-us"} className="text-white">
               Chúng tôi
