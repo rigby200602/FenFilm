@@ -26,12 +26,6 @@ const SideBar = () => {
                 Chúng tôi
               </span>
             </Link>
-            <Link to={"/about-us"} className="text-white">
-              Chúng tôi
-            </Link>
-            <Link to={"/about-us"} className="text-white">
-              Chúng tôi
-            </Link>
           </div>
         ) : null}
       </div>
