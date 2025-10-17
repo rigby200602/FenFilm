@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Season from "../components/Season";
 import collections from "../data/collections.json";
 import { useApp } from "../context/AppContext";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const Play = () => {
   //  get data
@@ -24,6 +25,7 @@ const Play = () => {
   return (
     <div>
       <NavBar />
+      <Breadcrumbs />
       <div className="my-5 mx-[5%]">
         <iframe
           key={id}
