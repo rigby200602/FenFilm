@@ -43,7 +43,7 @@ const Breadcrumbs = () => {
           fill="#CBD5E1"
         />
       </svg>
-      <Link to={`/play/${id}`} className="text-white">Tập {id}</Link>
+      <Link to={`/play/${id}`} className="text-white transition hover:scale-105">Tập {id}</Link>
       {/* <svg
         width="20"
         height="20"
