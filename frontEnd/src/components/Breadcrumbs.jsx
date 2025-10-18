@@ -2,12 +2,15 @@ import React, { use } from "react";
 import { IoHome } from "react-icons/io5";
 import { useApp } from "../context/AppContext";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Breadcrumbs = () => {
   // get id
   const { id } = useParams();
   const { navigate, filmData } = useApp();
   // get film data
   const film = filmData(id);
+  // get collection id
+  const collection = film.collection;
   return (
     <div className="hidden md:flex flex-wrap space-x-2 text-sm text-gray-500 font-medium mx-[5%] my-4 items-center">
       <IoHome size="20" onClick={() => navigate("/")} />
@@ -23,7 +26,7 @@ const Breadcrumbs = () => {
           fill="#CBD5E1"
         />
       </svg>
-      <a href="#">E-Commerce</a>
+      <Link to={`/${film.collection}`}>{film.collection}</Link>
       <svg
         width="20"
         height="20"
