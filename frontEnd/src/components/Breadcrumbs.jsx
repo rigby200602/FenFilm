@@ -3,6 +3,7 @@ import { IoHome } from "react-icons/io5";
 import { useApp } from "../context/AppContext";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import collections from "../data/collections.json";
 const Breadcrumbs = () => {
   // get id
   const { id } = useParams();
@@ -11,6 +12,9 @@ const Breadcrumbs = () => {
   const film = filmData(id);
   // get collection id
   const collection = film.collection;
+  // get collection name
+  const collectionName = collections.find((c) => c.id === Number(collection))
+    ?.name;
   return (
     <div className="hidden md:flex flex-wrap space-x-2 text-sm text-gray-500 font-medium mx-[5%] my-4 items-center">
       <IoHome size="20" onClick={() => navigate("/")} />
@@ -26,7 +30,7 @@ const Breadcrumbs = () => {
           fill="#CBD5E1"
         />
       </svg>
-      <Link to={`/${film.collection}`}>{film.collection}</Link>
+      <Link to={`/collections/${film.collection}`}>{collectionName}</Link>
       <svg
         width="20"
         height="20"
