@@ -43,8 +43,8 @@ const Breadcrumbs = () => {
           fill="#CBD5E1"
         />
       </svg>
-      <a href="#">Product</a>
-      <svg
+      <Link to={`/play/${id}`} className="text-white">Tập {id}</Link>
+      {/* <svg
         width="20"
         height="20"
         viewBox="0 0 20 20"
@@ -58,7 +58,7 @@ const Breadcrumbs = () => {
       </svg>
       <a href="#" className="text-indigo-500">
         Earphones
-      </a>
+      </a> */}
     </div>
   );
 };
