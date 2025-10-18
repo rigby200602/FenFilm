@@ -17,7 +17,7 @@ const Breadcrumbs = () => {
     ?.name;
   return (
     <div className="hidden md:flex flex-wrap space-x-2 text-sm text-gray-500 font-medium mx-[5%] my-4 items-center">
-      <IoHome size="20" onClick={() => navigate("/")} />
+      <IoHome size="20" onClick={() => navigate("/")} className="cursor-pointer transition hover:scale-105"/>
       <svg
         width="20"
         height="20"
@@ -30,7 +30,7 @@ const Breadcrumbs = () => {
           fill="#CBD5E1"
         />
       </svg>
-      <Link to={`/collections/${film.collection}`}>{collectionName}</Link>
+      <Link to={`/collections/${film.collection}`} className="transition hover:scale-105">{collectionName}</Link>
       <svg
         width="20"
         height="20"
