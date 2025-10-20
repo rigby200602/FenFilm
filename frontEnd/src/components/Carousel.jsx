@@ -14,9 +14,9 @@ const Carousel = ({ data }) => {
   const prevSlide = () => {
     setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
-
+  // Auto slideshow effect
   useEffect(() => {
-    
+
   }, [slide]);
 
   return (
