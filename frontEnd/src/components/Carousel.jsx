@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect, use } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { AppContext } from "../context/AppContext";
 
@@ -14,6 +14,10 @@ const Carousel = ({ data }) => {
   const prevSlide = () => {
     setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
+
+  useEffect(() => {
+    
+  }, [slide]);
 
   return (
     <div className="flex justify-center items-center px-[5%]">
