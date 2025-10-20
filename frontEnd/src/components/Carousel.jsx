@@ -16,7 +16,10 @@ const Carousel = ({ data }) => {
   };
   // Auto slideshow effect
   useEffect(() => {
-
+    const interval = setInterval(() => {
+      nextSlide();
+    })
+    return () => clearInterval(interval);
   }, [slide]);
 
   return (
