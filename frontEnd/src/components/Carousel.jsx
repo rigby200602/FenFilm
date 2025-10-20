@@ -46,7 +46,7 @@ const Carousel = ({ data }) => {
           className="hidden md:block cursor-pointer"
         />
       </span>
-      <span className="flex absolute mt-[30%] space-x-2">
+      <span className="hidden md:flex absolute mt-[30%] space-x-2">
         {data.map((item, i) => {
           return (
             <button
