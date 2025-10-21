@@ -38,7 +38,7 @@ const Carousel = ({ data }) => {
           <img
             key={i}
             src={item.url}
-            alt={item.title}
+            title={item.title}
             loading="lazy"
             className={slide === i ? "w-full max-h-135 cursor-pointer" : "hidden"}
             onClick={() => navigate(`/collections/${item.collection}`)}
