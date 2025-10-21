@@ -3,8 +3,8 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { AppContext } from "../context/AppContext";
 
 const Carousel = ({ data }) => {
-  const { navigate } = useContext(AppContext)
-   // State to keep track of the current slide
+  const { navigate } = useContext(AppContext);
+  // State to keep track of the current slide
   const [slide, setSlide] = useState(0);
   // Function to go to the next slide
   const nextSlide = () => {
@@ -18,12 +18,28 @@ const Carousel = ({ data }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000)
+    }, 3000);
     return () => clearInterval(interval);
   }, [slide]);
 
   return (
-    <div className="flex justify-center items-center px-[5%]">
+    <div className="overflow-hidden relative px-[5%]">
+      <div className="flex duration-500 transition-transform ease-out">
+        {data.map((item, i) => {
+          return (
+            <img
+              key={i}
+              src={item.url}
+              alt={item.title}
+              loading="lazy"
+              className={
+                slide === i ? "w-full max-h-135 cursor-pointer" : "hidden"
+              }
+              onClick={() => navigate(`/collections/${item.collection}`)}
+            />
+          );
+        })}
+      </div>
       <span className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
         <BsArrowLeftCircleFill
           size={50}
@@ -33,18 +49,7 @@ const Carousel = ({ data }) => {
         />
       </span>
       {/* Render slides */}
-      {data.map((item, i) => {
-        return (
-          <img
-            key={i}
-            src={item.url}
-            alt={item.title}
-            loading="lazy"
-            className={slide === i ? "w-full max-h-135 cursor-pointer" : "hidden"}
-            onClick={() => navigate(`/collections/${item.collection}`)}
-          />
-        );
-      })}
+
       <span className="hover:opacity-50 transition hover:-translate-y-1 absolute right-[5.5%]">
         <BsArrowRightCircleFill
           size={50}
