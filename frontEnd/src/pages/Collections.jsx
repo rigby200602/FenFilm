@@ -33,7 +33,7 @@ const Collections = () => {
           {collection.name}
         </h2>
         <div className="flex justify-center">
-          <img src={collection.src} className="w-80 h-100" />
+          <img src={collection.src} className="w-80 h-100" title={collection.name} />
           <p className="ml-4 text-xl md:text-2xl hidden md:block">
             {collection.description}
           </p>
