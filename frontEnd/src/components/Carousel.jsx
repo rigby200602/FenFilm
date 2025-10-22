@@ -24,7 +24,11 @@ const Carousel = ({ data }) => {
 
   return (
     <div className="overflow-hidden relative justify-center items-center mx-[5%]">
-      <div className="flex justify-center items-center w-full">
+      <div className="flex justify-center items-center w-full transition duration-500 ease-out"
+      // style={{
+      //   transform: `translateX(-${slide * 100}%)`
+      // }}
+      >
         {/* Render slides */}
         {data.map((item, i) => {
           return (
@@ -42,10 +46,10 @@ const Carousel = ({ data }) => {
         })}
       </div>
       <div className="absolute w-full h-full top-0 flex justify-between items-center">
-        <button className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
+        <button className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1"
+        onClick={prevSlide}>
           <BsArrowLeftCircleFill
             size={50}
-            onClick={prevSlide}
             color="white"
             className="hidden md:block absolute cursor-pointer ml-2"
           />
@@ -67,10 +71,10 @@ const Carousel = ({ data }) => {
             );
           })}
         </div>
-        <button className="hover:opacity-50 transition hover:-translate-y-1 absolute right-0">
+        <button className="hover:opacity-50 transition hover:-translate-y-1 absolute right-0"
+        onClick={nextSlide}>
           <BsArrowRightCircleFill
             size={50}
-            onClick={nextSlide}
             color="white"
             className="hidden md:block cursor-pointer mr-2"
           />
