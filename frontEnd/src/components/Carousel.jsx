@@ -41,40 +41,42 @@ const Carousel = ({ data }) => {
           );
         })}
       </div>
-      <span className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
-        <BsArrowLeftCircleFill
-          size={50}
-          onClick={prevSlide}
-          color="white"
-          className="hidden md:block absolute cursor-pointer ml-2"
-        />
-      </span>
+      <div className="absolute w-full top-[45%] flex justify-between items-center">
+        <button className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
+          <BsArrowLeftCircleFill
+            size={50}
+            onClick={prevSlide}
+            color="white"
+            className="hidden md:block absolute cursor-pointer ml-2"
+          />
+        </button>
 
-      <span className="hover:opacity-50 transition hover:-translate-y-1 absolute right-[5.5%]">
-        <BsArrowRightCircleFill
-          size={50}
-          onClick={nextSlide}
-          color="white"
-          className="hidden md:block cursor-pointer"
-        />
-      </span>
-      <span className="hidden md:flex absolute mt-[30%] space-x-2">
-        {data.map((item, i) => {
-          return (
-            <button
-              key={i}
-              onClick={() => setSlide(i)}
-              className={
-                slide === i
-                  ? "text-white text-3xl md:text-4xl lg:text-5xl cursor-pointer"
-                  : "text-gray-400 text-3xl md:text-4xl lg:text-5xl cursor-pointer"
-              }
-            >
-              •
-            </button>
-          );
-        })}
-      </span>
+        <button className="hover:opacity-50 transition hover:-translate-y-1 absolute right-[5.5%]">
+          <BsArrowRightCircleFill
+            size={50}
+            onClick={nextSlide}
+            color="white"
+            className="hidden md:block cursor-pointer"
+          />
+        </button>
+        <span className="hidden md:flex absolute mt-[30%] space-x-2">
+          {data.map((item, i) => {
+            return (
+              <button
+                key={i}
+                onClick={() => setSlide(i)}
+                className={
+                  slide === i
+                    ? "text-white text-3xl md:text-4xl lg:text-5xl cursor-pointer"
+                    : "text-gray-400 text-3xl md:text-4xl lg:text-5xl cursor-pointer"
+                }
+              >
+                •
+              </button>
+            );
+          })}
+        </span>
+      </div>
     </div>
   );
 };
