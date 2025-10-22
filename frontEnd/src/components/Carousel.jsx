@@ -23,7 +23,7 @@ const Carousel = ({ data }) => {
   }, [slide]);
 
   return (
-    <div className="overflow-hidden relative justify-center items-center mx-[5%]">
+    <div className="overflow-hidden relative mx-[5%]">
       <div className="flex justify-center items-center w-full transition duration-500 ease-out"
       // style={{
       //   transform: `translateX(-${slide * 100}%)`
