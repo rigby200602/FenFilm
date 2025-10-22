@@ -24,9 +24,9 @@ const Carousel = ({ data }) => {
 
   return (
     <div className="overflow-hidden relative mx-[5%]">
-      <div className="flex justify-center items-center w-full transition duration-500 ease-out"
+      <div className="flex w-full transition duration-500 ease-out"
       // style={{
-      //   transform: `translateX(-${slide * 100}%)`
+      //   transform: `translateX(${slide * 100}%)`
       // }}
       >
         {/* Render slides */}
