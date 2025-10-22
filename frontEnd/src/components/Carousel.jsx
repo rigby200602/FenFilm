@@ -23,8 +23,8 @@ const Carousel = ({ data }) => {
   }, [slide]);
 
   return (
-    <div className="overflow-hidden relative justify-center items-center px-[5%]">
-      <div className="flex justify-center items-center">
+    <div className="overflow-hidden relative justify-center items-center mx-[5%]">
+      <div className="flex justify-center items-center w-full">
         {/* Render slides */}
         {data.map((item, i) => {
           return (
@@ -41,7 +41,7 @@ const Carousel = ({ data }) => {
           );
         })}
       </div>
-      <div className="absolute w-full top-[45%] flex justify-between items-center">
+      <div className="absolute w-full h-full top-0 flex justify-between items-center">
         <button className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
           <BsArrowLeftCircleFill
             size={50}
@@ -50,16 +50,7 @@ const Carousel = ({ data }) => {
             className="hidden md:block absolute cursor-pointer ml-2"
           />
         </button>
-
-        <button className="hover:opacity-50 transition hover:-translate-y-1 absolute right-[5.5%]">
-          <BsArrowRightCircleFill
-            size={50}
-            onClick={nextSlide}
-            color="white"
-            className="hidden md:block cursor-pointer"
-          />
-        </button>
-        <span className="hidden md:flex absolute mt-[30%] space-x-2">
+        <div className="hidden md:flex absolute w-full mt-[30%] space-x-2 justify-center items-center">
           {data.map((item, i) => {
             return (
               <button
@@ -75,7 +66,15 @@ const Carousel = ({ data }) => {
               </button>
             );
           })}
-        </span>
+        </div>
+        <button className="hover:opacity-50 transition hover:-translate-y-1 absolute right-0">
+          <BsArrowRightCircleFill
+            size={50}
+            onClick={nextSlide}
+            color="white"
+            className="hidden md:block cursor-pointer mr-2"
+          />
+        </button>
       </div>
     </div>
   );
