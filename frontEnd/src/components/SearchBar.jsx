@@ -5,6 +5,7 @@ const SearchBar = () => {
   return (
     <div>
         <CiSearch />
+        <input type='text' placeholder='Tìm kiếm'/>
     </div>
   )
 }
