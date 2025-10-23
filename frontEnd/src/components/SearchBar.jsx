@@ -3,8 +3,10 @@ import { CiSearch } from "react-icons/ci";
 
 const SearchBar = () => {
   return (
-    <div>
-        <CiSearch />
+    <div className='flex'>
+        <span>
+            <CiSearch />
+        </span>
         <input type='text' placeholder='Tìm kiếm'/>
     </div>
   )
