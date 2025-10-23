@@ -1,8 +1,11 @@
 import React from 'react'
+import { CiSearch } from "react-icons/ci";
 
 const SearchBar = () => {
   return (
-    <div>SearchBar</div>
+    <div>
+        <CiSearch />
+    </div>
   )
 }
 
