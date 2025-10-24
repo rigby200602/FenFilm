@@ -7,7 +7,7 @@ const SearchBar = () => {
         <span>
             <CiSearch className='mx-2'size={20}/>
         </span>
-        <input type='text' placeholder='Tìm kiếm' className='outline-none'/>
+        <input type='text' placeholder='Tìm kiếm' className='outline-none pr-4'/>
     </div>
   )
 }
