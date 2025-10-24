@@ -3,9 +3,9 @@ import { CiSearch } from "react-icons/ci";
 
 const SearchBar = () => {
   return (
-    <div className='flex bg-white text-black rounded-4xl mx-2 '>
+    <div className='flex bg-white text-black rounded-4xl mx-2 justify-between items-center'>
         <span>
-            <CiSearch />
+            <CiSearch className='mx-2'size={20}/>
         </span>
         <input type='text' placeholder='Tìm kiếm' className='outline-none'/>
     </div>
