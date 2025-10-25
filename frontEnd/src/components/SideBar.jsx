@@ -39,7 +39,7 @@ const SideBar = () => {
           </div>
         ) : null}
       </div>
-      <div className="flex md:hidden justify-center items-center my-4 mx-[5%] w-full max-w-60 ml-auto top-0">
+      <div className="relative md:hidden justify-center items-center my-4 ml-auto top-0 mt-[1%]">
         <SearchBar />
       </div>
     </div>
