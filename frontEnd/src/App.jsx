@@ -14,9 +14,6 @@ function App() {
     <React.StrictMode>
       <AppContextProvider>
         <NavBar />
-        <div className="flex md:hidden">
-          <SearchBar />
-        </div>
         <Carousel data={slides} />
         {collections.map((item, i) => {
           return (
