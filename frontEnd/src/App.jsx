@@ -7,7 +7,6 @@ import lists from "./data/lists.json";
 import collections from "./data/collections.json";
 import { AppContextProvider } from "./context/AppContext";
 import React from "react";
-import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
