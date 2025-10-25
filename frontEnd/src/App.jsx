@@ -14,7 +14,7 @@ function App() {
     <React.StrictMode>
       <AppContextProvider>
         <NavBar />
-        <div>
+        <div className="flex md:hidden">
           <SearchBar />
         </div>
         <Carousel data={slides} />
