@@ -7,12 +7,16 @@ import lists from "./data/lists.json";
 import collections from "./data/collections.json";
 import { AppContextProvider } from "./context/AppContext";
 import React from "react";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <React.StrictMode>
       <AppContextProvider>
         <NavBar />
+        <div>
+          <SearchBar />
+        </div>
         <Carousel data={slides} />
         {collections.map((item, i) => {
           return (
