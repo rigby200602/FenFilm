@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 const SearchBar = () => {
   const [search, setSearch] = useState()
   return (
-    <div className='flex bg-white text-black rounded-4xl mx-2 justify-between items-center w-full max-w-90 md:max-w-60 h-10'>
+    <div className='flex bg-white text-black rounded-l-4xl mx-2 justify-between items-center w-full max-w-90 md:max-w-60 h-10'>
         <span>
             <CiSearch className='mx-2'size={20}/>
         </span>
