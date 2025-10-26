@@ -12,13 +12,13 @@ const NavBar = () => {
           FenFilm
         </Link>
         <div className="ml-auto hidden md:flex mt-2">
-          <SearchBar/>
           <Link
             to={"/about-us"}
             className="rounded-4xl cursor-pointer px-4 py-2 bg-white text-[#17252A] hover:bg-purple-800 hover:text-white"
           >
             Chúng tôi
           </Link>
+          <SearchBar/>
         </div>
       </div>
 
