@@ -18,7 +18,7 @@ const NavBar = () => {
           >
             Chúng tôi
           </Link>
-          <SearchBar/>
+          <SearchBar className='mx-0'/>
         </div>
       </div>
 
