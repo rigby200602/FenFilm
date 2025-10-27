@@ -1,3 +1,3 @@
-Build a website so my viewer can watch movie which i had subtitled to Vietnamese.
+# Build a website so my viewer can watch movie which i had subtitled to Vietnamese.
 Using ReactJS, tailwindcss.
 React-Router-Dom, React-Icons
