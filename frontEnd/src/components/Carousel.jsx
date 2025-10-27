@@ -1,9 +1,9 @@
 import React, { useContext, useState, useEffect, use } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
-import { AppContext } from "../context/AppContext";
+import { useApp } from "../context/AppContext";
 
 const Carousel = ({ data }) => {
-  const { navigate } = useContext(AppContext)
+  const { navigate } = useApp();
    // State to keep track of the current slide
   const [slide, setSlide] = useState(0);
   // Function to go to the next slide
