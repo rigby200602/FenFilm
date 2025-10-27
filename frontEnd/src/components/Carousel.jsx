@@ -3,8 +3,8 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { AppContext } from "../context/AppContext";
 
 const Carousel = ({ data }) => {
-  const { navigate } = useContext(AppContext);
-  // State to keep track of the current slide
+  const { navigate } = useContext(AppContext)
+   // State to keep track of the current slide
   const [slide, setSlide] = useState(0);
   // Function to go to the next slide
   const nextSlide = () => {
@@ -18,68 +18,58 @@ const Carousel = ({ data }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 3000)
     return () => clearInterval(interval);
   }, [slide]);
 
   return (
-    <div className="overflow-hidden relative mx-[5%]">
-      <div className="flex w-full transition duration-500 ease-out"
-      // style={{
-      //   transform: `translateX(${slide * 100}%)`
-      // }}
-      >
-        {/* Render slides */}
+    <div className="flex justify-center items-center px-[5%]">
+      <span className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1">
+        <BsArrowLeftCircleFill
+          size={50}
+          onClick={prevSlide}
+          color="white"
+          className="hidden md:block absolute cursor-pointer ml-2"
+        />
+      </span>
+      {/* Render slides */}
+      {data.map((item, i) => {
+        return (
+          <img
+            key={i}
+            src={item.url}
+            title={item.title}
+            loading="lazy"
+            className={slide === i ? "w-full max-h-135 cursor-pointer" : "hidden"}
+            onClick={() => navigate(`/collections/${item.collection}`)}
+          />
+        );
+      })}
+      <span className="hover:opacity-50 transition hover:-translate-y-1 absolute right-[5.5%]">
+        <BsArrowRightCircleFill
+          size={50}
+          onClick={nextSlide}
+          color="white"
+          className="hidden md:block cursor-pointer"
+        />
+      </span>
+      <span className="hidden md:flex absolute mt-[30%] space-x-2">
         {data.map((item, i) => {
           return (
-            <img
+            <button
               key={i}
-              src={item.url}
-              title={item.title}
-              loading="lazy"
+              onClick={() => setSlide(i)}
               className={
-                slide === i ? "w-full max-h-135 cursor-pointer" : "hidden"
+                slide === i
+                  ? "text-white text-3xl md:text-4xl lg:text-5xl cursor-pointer"
+                  : "text-gray-400 text-3xl md:text-4xl lg:text-5xl cursor-pointer"
               }
-              onClick={() => navigate(`/collections/${item.collection}`)}
-            />
+            >
+              •
+            </button>
           );
         })}
-      </div>
-      <div className="absolute w-full h-full top-0 flex justify-between items-center">
-        <button className="hover:opacity-50 mb-[4%] transition hover:-translate-y-1"
-        onClick={prevSlide}>
-          <BsArrowLeftCircleFill
-            size={50}
-            color="white"
-            className="hidden md:block absolute cursor-pointer ml-2"
-          />
-        </button>
-        <div className="hidden md:flex absolute w-full mt-[30%] space-x-2 justify-center items-center">
-          {data.map((item, i) => {
-            return (
-              <button
-                key={i}
-                onClick={() => setSlide(i)}
-                className={
-                  slide === i
-                    ? "text-white text-3xl md:text-4xl lg:text-5xl cursor-pointer"
-                    : "text-gray-400 text-3xl md:text-4xl lg:text-5xl cursor-pointer"
-                }
-              >
-                •
-              </button>
-            );
-          })}
-        </div>
-        <button className="hover:opacity-50 transition hover:-translate-y-1 absolute right-0"
-        onClick={nextSlide}>
-          <BsArrowRightCircleFill
-            size={50}
-            color="white"
-            className="hidden md:block cursor-pointer mr-2"
-          />
-        </button>
-      </div>
+      </span>
     </div>
   );
 };
