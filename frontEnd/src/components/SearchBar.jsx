@@ -14,7 +14,7 @@ const SearchBar = () => {
         <span>
             <CiSearch className='mx-2'size={20}/>
         </span>
-        <input type='text' placeholder='Tìm kiếm' className='outline-none pr-4' onChange={handleSearch}/>
+        <input name='Search' type='text' placeholder='Tìm kiếm' className='outline-none pr-4' onChange={handleSearch}/>
     </div>
   )
 }
