@@ -15,8 +15,8 @@ const Season = ({ data }) => {
     // check if listFilm have any value, only show when have value
     <>
     { listFilm.length ? ( 
-      <div className="mx-[5%] mb-4 text-white flex">
-        <h1 className="text-xl hidden lg:block w-70">{season.name} :</h1>
+      <div className="flex mx-[5%] mb-4 text-white">
+        <h1 className="text-xl hidden lg:block w-70">{season.name}:</h1>
         <div className="w-full grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
           {listFilm.map((item, id) => (
           <Link
