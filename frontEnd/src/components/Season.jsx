@@ -17,7 +17,7 @@ const Season = ({ data }) => {
     { listFilm.length ? ( 
       <div className="block md:flex mx-[5%] mb-4 text-white">
         <h1 className="text-xl hidden lg:block w-70">{season.name}:</h1>
-        <h1 className="text-2xl font-bold block md:hidden text-center my-2">{season.name}</h1>
+        <h1 className="text-2xl font-bold block md:hidden text-center mb-2">{season.name}</h1>
         <div className="w-full grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
           {listFilm.map((item, id) => (
           <Link
