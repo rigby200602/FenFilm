@@ -5,4 +5,4 @@ React-Router-Dom, React-Icons
 Download it first\
 npm install\
 npm run dev\
-go the localhost\
+go the localhost
