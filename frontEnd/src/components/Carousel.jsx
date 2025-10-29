@@ -21,6 +21,10 @@ const Carousel = ({ data }) => {
     }, 3000)
     return () => clearInterval(interval);
   }, [slide]);
+  // Handle click on slide to navigate to collection
+  const handleClick = (collectionId) => {
+    navigate(`/collections/${collectionId}`);
+  }
 
   return (
     <div className="flex justify-center items-center px-[5%]">
@@ -41,7 +45,7 @@ const Carousel = ({ data }) => {
             title={item.title}
             loading="lazy"
             className={slide === i ? "w-full max-h-135 cursor-pointer" : "hidden"}
-            onClick={() => navigate(`/collections/${item.collection}`)}
+            onClick={handleClick.bind(this, item.collection)}
           />
         );
       })}
