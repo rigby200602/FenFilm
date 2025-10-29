@@ -4,6 +4,9 @@ import { AiFillTikTok } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const handleClick= () => {
+    window.scrollTo(0, 0)
+  }
   return (
     <div className="text-white h-[25%] w-full px-[5%] mt-[2%]">
       {/* White line */}
@@ -15,7 +18,7 @@ const Footer = () => {
         <div className="hidden md:block flex-col  w-[25%]"></div>
         <div className="hidden md:block flex-col  w-[25%]"></div>
         <div className="flex flex-col justify-center items-center w-[25%]">
-          <Link to={"/"} onClick={() => window.scrollTo(0, 0)}
+          <Link to={"/"} onClick={handleClick}
           className="text-4xl font-bold cursor-pointer">FenFilm</Link>
           <div className="flex my-4">
             <Link to={'https://www.facebook.com/fensub20'}><FaFacebookSquare className="mx-4 cursor-pointer mt-[2px]" size={50}/></Link>
