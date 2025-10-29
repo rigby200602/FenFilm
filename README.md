@@ -2,7 +2,7 @@
 Using ReactJS, tailwindcss.
 React-Router-Dom, React-Icons
 # Tutorial - How to use:
-Download it first/
-npm install/
-npm run dev/
-go the localhost/
+Download it first\
+npm install\
+npm run dev\
+go the localhost\
