@@ -8,9 +8,9 @@ import SearchBar from "./SearchBar";
 
 const SideBar = () => {
   const [isOn, setIsOn] = useState(false);
-  const toggleMenu = () => {
+  const handleClick = () => {
     setIsOn(!isOn);
-  };
+  }
   return (
     <div className="flex md:hidden w-full">
       {/* Menu for small screen */}
@@ -18,7 +18,7 @@ const SideBar = () => {
         <RiMenu3Line
           size={40}
           className="text-white cursor-pointer"
-          onClick={() => toggleMenu()}
+          onClick={handleClick}
         />
         {isOn ? (
           <div className="flex flex-col bg-inherit">
