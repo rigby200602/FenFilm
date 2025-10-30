@@ -4,7 +4,7 @@ import { GrLinkPrevious } from "react-icons/gr";
 const Pagination = () => {
   return (
     <div className='flex items-center gap-2'>
-        <button>
+        <button className='w-full rounded-4xl'>
             <GrLinkPrevious />
         </button>
     </div>
