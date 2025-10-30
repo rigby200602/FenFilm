@@ -6,6 +6,7 @@ import collections from "../data/collections.json";
 import lists from "../data/lists.json";
 import Box from "../components/Box";
 import { useApp } from "../context/AppContext";
+import Pagination from "../components/Pagination";
 
 const Collections = () => {
   // get collection thorough id
@@ -58,6 +59,7 @@ const Collections = () => {
           </h2>
         </div>
       )}
+      <Pagination />
       <Footer />
     </div>
   );
