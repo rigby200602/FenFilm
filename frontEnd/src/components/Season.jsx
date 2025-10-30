@@ -11,6 +11,9 @@ const Season = ({ data }) => {
   const season = seasons.find((s) => s.id === data);
   // get list film through season
   const listFilm = lists.filter((l) => l.season === season.id);
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  }
   return (
     // check if listFilm have any value, only show when have value
     <>
@@ -23,7 +26,7 @@ const Season = ({ data }) => {
           <Link
             to={`/play/${item.id}`}
             key={id}
-            onClick={()=> scrollTo(0,0)}
+            onClick={handleClick}
             className="h-10 cursor-pointer py-[5%] mx-auto w-full max-w-24 sm:max-w-24 md:max-w-22 lg:max-w-28
           hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
           // for reponsive
