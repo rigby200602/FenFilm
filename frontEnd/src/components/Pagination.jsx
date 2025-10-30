@@ -5,7 +5,7 @@ const Pagination = () => {
   return (
     <div className='flex justify-center items-center gap-2 mx-[5%] my-4'>
         <button className='w-10 h-10 rounded-full bg-white text-black'>
-            <GrLinkPrevious className=''/>
+            <GrLinkPrevious className='mx-auto'/>
         </button>
     </div>
   )
