@@ -8,9 +8,6 @@ const SearchBar = () => {
   const handleChange = (e) => {
     setSearch(e.target.value)
   }
-  const handleFocus = (e) => {
-    e.target.preventDefault;
-  }
   return (
     <div className='flex bg-white text-black rounded-4xl md:mr-0 ml-0 md:ml-2 
     justify-between items-center w-full max-w-90 md:max-w-60 h-10'>
@@ -19,7 +16,7 @@ const SearchBar = () => {
         </span>
         <input name='Search' type='text' placeholder='Tìm kiếm' 
         className='outline-none mr-4 focus:bg-white' onChange={handleChange}
-        onFocus={handleFocus}/>
+        />
     </div>
   )
 }
