@@ -7,6 +7,8 @@ const SearchBar = () => {
 
   const handleChange = (e) => {
     setSearch(e.target.value)
+    const test = document.querySelector('input[name="Search"]')
+    console.log([test])
   }
   return (
     <div className='flex bg-white text-black rounded-4xl md:mr-0 ml-0 md:ml-2 
@@ -16,7 +18,7 @@ const SearchBar = () => {
         </span>
         <input name='Search' type='text' placeholder='Tìm kiếm' 
         className='outline-none mr-4 focus:bg-white' onChange={handleChange}
-        autoComplete='false'
+        autoComplete='off'
         />
     </div>
   )
