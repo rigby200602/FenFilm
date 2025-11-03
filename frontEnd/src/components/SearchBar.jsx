@@ -7,7 +7,6 @@ const SearchBar = () => {
 
   const handleChange = (e) => {
     setSearch(e.target.value)
-    console.log(search)
   }
   const handleFocus = (e) => {
     e.target.preventDefault;
@@ -19,7 +18,7 @@ const SearchBar = () => {
             <CiSearch className='mx-2'size={20}/>
         </span>
         <input name='Search' type='text' placeholder='Tìm kiếm' 
-        className='outline-none mr-4' onChange={handleChange}
+        className='outline-none mr-4 focus:bg-white' onChange={handleChange}
         onFocus={handleFocus}/>
     </div>
   )
