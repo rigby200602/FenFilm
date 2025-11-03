@@ -16,6 +16,7 @@ const SearchBar = () => {
         </span>
         <input name='Search' type='text' placeholder='Tìm kiếm' 
         className='outline-none mr-4 focus:bg-white' onChange={handleChange}
+        autoComplete='false'
         />
     </div>
   )
