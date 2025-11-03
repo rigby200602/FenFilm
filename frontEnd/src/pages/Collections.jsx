@@ -34,7 +34,11 @@ const Collections = () => {
           {collection.name}
         </h2>
         <div className="flex justify-center">
-          <img src={collection.src} className="w-80 h-100" title={collection.name} />
+          <img
+            src={collection.src}
+            className="w-80 h-100"
+            title={collection.name}
+          />
           <p className="ml-4 text-xl md:text-2xl hidden md:block">
             {collection.description}
           </p>
@@ -45,12 +49,15 @@ const Collections = () => {
       </div>
       {/* check if film has any value */}
       {filmsInCollection.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[5%]">
-          {/* render box for each episode */}
-          {data.map((film, id) => (
-            <Box key={id} data={film} />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[5%]">
+            {/* render box for each episode */}
+            {data.map((film, id) => (
+              <Box key={id} data={film} />
+            ))}
+          </div>
+          <Pagination />
+        </>
       ) : (
         // if no film in collection
         <div>
@@ -59,7 +66,6 @@ const Collections = () => {
           </h2>
         </div>
       )}
-      <Pagination />
       <Footer />
     </div>
   );
