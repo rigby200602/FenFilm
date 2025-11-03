@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 const SearchBar = () => {
   const [search, setSearch] = useState()
 
-  const handleSearch = (e) => {
+  const handleChange = (e) => {
     setSearch(e.target.value)
     console.log(search)
   }
