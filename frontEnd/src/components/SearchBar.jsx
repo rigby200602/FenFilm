@@ -7,8 +7,6 @@ const SearchBar = () => {
 
   const handleChange = (e) => {
     setSearch(e.target.value)
-    const test = document.querySelector('input[name="Search"]')
-    console.log([test])
   }
   return (
     <div className='flex bg-white text-black rounded-4xl md:mr-0 ml-0 md:ml-2 
