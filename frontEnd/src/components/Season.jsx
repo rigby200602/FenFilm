@@ -1,6 +1,6 @@
 import React from "react";
 import lists from "../data/lists.json";
-import { Link, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import seasons from "../data/seasons.json";
 import App from "../App";
 
@@ -23,7 +23,7 @@ const Season = ({ data }) => {
         <h1 className="text-2xl font-bold block md:hidden text-center mb-2">{season.name}</h1>
         <div className="w-full grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-10 gap-2">
           {listFilm.map((item, id) => (
-          <Link
+          <NavLink
             to={`/play/${item.id}`}
             key={id}
             onClick={handleClick}
@@ -36,7 +36,7 @@ const Season = ({ data }) => {
           "
           >
             <p className="text-center">{item.id}</p>
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>
