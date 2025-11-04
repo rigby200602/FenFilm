@@ -11,6 +11,7 @@ const Season = ({ data }) => {
   const season = seasons.find((s) => s.id === data);
   // get list film through season
   const listFilm = lists.filter((l) => l.season === season.id);
+  // handle click
   const handleClick = () => {
     window.scrollTo(0, 0);
   }
