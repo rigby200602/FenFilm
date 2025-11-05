@@ -28,7 +28,6 @@ const Season = ({ data }) => {
             to={`/play/${item.id}`}
             key={id}
             onClick={handleClick}
-            activeClassName="bg-white text-black"
             className="h-10 cursor-pointer py-[5%] mx-auto w-full max-w-24 sm:max-w-24 md:max-w-22 lg:max-w-28
           hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
           // for reponsive
