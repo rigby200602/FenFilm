@@ -13,7 +13,7 @@ const ListCartoon = (props) => {
     <div className="h-[15%] mx-[5%] mt-8">
       {data.length > 0 ? (
         <div>
-          <h1 className="text-3xl text-white text-center md:text-start hover:animate-bounce">
+          <h1 className="text-3xl text-white text-center md:text-start">
             <Link to={`/collections/${props.collection}`}>{props.title}</Link>
           </h1>
           {/* Show box */}
