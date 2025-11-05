@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use, useState } from "react";
 import lists from "../data/lists.json";
 import { NavLink, useParams } from "react-router-dom";
 import seasons from "../data/seasons.json";
@@ -29,7 +29,7 @@ const Season = ({ data }) => {
             key={id}
             onClick={handleClick}
             className="h-10 cursor-pointer py-[5%] mx-auto w-full max-w-24 sm:max-w-24 md:max-w-22 lg:max-w-28
-          hover:border hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
+        hover:border-white hover:rounded-2xl hover:text-black hover:bg-white
           // for reponsive
           border border-white rounded-2xl text-black bg-white
           lg:border-0 lg:rounded-none lg:text-white lg:bg-transparent
