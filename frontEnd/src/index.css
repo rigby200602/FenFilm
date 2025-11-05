@@ -4,3 +4,8 @@ body {
   background-color: #17252A;
   font-family: "lexend", sans-serif;
 }
+a.active {
+  background-color: #6e11b0;
+  color: white;
+  border-radius: 1rem;
+}
