@@ -10,7 +10,7 @@ const ListCartoon = (props) => {
   // only show 4 box
   const data = list.filter((item) => item.id < 5);
   return (
-    <div className="h-[15%] mx-[5%] mt-4">
+    <div className="h-[15%] mx-[5%] mt-4 md:mt-8">
       {data.length > 0 ? (
         <div>
           <h1 className="text-3xl text-white text-center md:text-start">
