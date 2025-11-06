@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div>
         <NavBar/>
-        <div className='text-white mx-[5%] text-2xl leading-10'>
+        <div className='text-white mx-[5%] text-4xl leading-10'>
             <h1 className='text-3xl md:text-4xl text-center my-2'>Chúng tôi là ai?</h1>
             <p>Xin chào các bạn!</p>
             <p>Mình là Fensub, người đang thực hiện các dự ác dịch thuật các phim hoạt hình cũ trên các kênh TV ngày ấy.</p>
