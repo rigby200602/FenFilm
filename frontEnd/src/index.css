@@ -8,4 +8,5 @@ a.active {
   background-color: #6e11b0;
   color: white;
   border-radius: 1rem;
+  border: #6e11b0;
 }
